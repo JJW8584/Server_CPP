@@ -5,11 +5,14 @@ X:\Github\Server_std\ServerCore\CoreTLS.cpp;X:\Github\Server_std\ServerCore\x64\
 X:\Github\Server_std\ServerCore\DeadLockProfiler.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DeadLockProfiler.obj
 X:\Github\Server_std\ServerCore\IocpCore.cpp;X:\Github\Server_std\ServerCore\x64\Debug\IocpCore.obj
 X:\Github\Server_std\ServerCore\IocpEvent.cpp;X:\Github\Server_std\ServerCore\x64\Debug\IocpEvent.obj
+X:\Github\Server_std\ServerCore\Listener.cpp;X:\Github\Server_std\ServerCore\x64\Debug\Listener.obj
 X:\Github\Server_std\ServerCore\Lock.cpp;X:\Github\Server_std\ServerCore\x64\Debug\Lock.obj
 X:\Github\Server_std\ServerCore\Memory.cpp;X:\Github\Server_std\ServerCore\x64\Debug\Memory.obj
 X:\Github\Server_std\ServerCore\MemoryPool.cpp;X:\Github\Server_std\ServerCore\x64\Debug\MemoryPool.obj
 X:\Github\Server_std\ServerCore\NetAddress.cpp;X:\Github\Server_std\ServerCore\x64\Debug\NetAddress.obj
 X:\Github\Server_std\ServerCore\pch.cpp;X:\Github\Server_std\ServerCore\x64\Debug\pch.obj
 X:\Github\Server_std\ServerCore\RefCounting.cpp;X:\Github\Server_std\ServerCore\x64\Debug\RefCounting.obj
+X:\Github\Server_std\ServerCore\Service.cpp;X:\Github\Server_std\ServerCore\x64\Debug\Service.obj
+X:\Github\Server_std\ServerCore\Session.cpp;X:\Github\Server_std\ServerCore\x64\Debug\Session.obj
 X:\Github\Server_std\ServerCore\SocketUtils.cpp;X:\Github\Server_std\ServerCore\x64\Debug\SocketUtils.obj
 X:\Github\Server_std\ServerCore\ThreadManager.cpp;X:\Github\Server_std\ServerCore\x64\Debug\ThreadManager.obj

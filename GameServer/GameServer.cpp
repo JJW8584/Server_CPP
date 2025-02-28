@@ -3,25 +3,46 @@
 #include <Windows.h>
 #include "ThreadManager.h"
 
-// 소켓 유틸 사용 예시
+#include "Service.h"
+#include "Session.h"
 
-// 자주 사용하지는 않지만 일일이 인자를 외우는 것보다
-// 꼭 설정해야하는 인자만 두고 매핑하면 사용하기 편하다!
-#include "SocketUtils.h"
+class GameSession : public Session
+{
+public:
+	virtual int32 OnRecv(BYTE* buffer, int32 len) override
+	{
+		// Echo
+		cout << "OnRecv Len = " << len << endl;
+		Send(buffer, len);
+		return len;
+	}
+
+	virtual void OnSend(int32 len) override
+	{
+		cout << "OnSend Len = " << len << endl;
+	}
+};
 
 int main()
 {
-	// 소켓 init과 clear는 CoreGlobal에서 수행
-	SOCKET socket = SocketUtils::CreateSocket();
+	ServerServiceRef service = MakeShared<ServerService>(
+		NetAddress(L"127.0.0.1", 7777),
+		MakeShared<IocpCore>(),
+		MakeShared<GameSession>, // TODO : SessionManager 등
+		100);
 
-	SocketUtils::BindAnyAddress(socket, 7777);
+	ASSERT_CRASH(service->Start());
 
-	SocketUtils::Listen(socket);
-
-	// 이후 IOCP와 연동해서 사용
-	SOCKET clientSocket = ::accept(socket, nullptr, nullptr);
-
-	cout << "Client Connected!" << endl;
+	for (int32 i = 0; i < 5; i++)
+	{
+		GThreadManager->Launch([=]()
+			{
+				while (true)
+				{
+					service->GetIocpCore()->Dispatch();
+				}
+			});
+	}
 
 	GThreadManager->Join();
 }

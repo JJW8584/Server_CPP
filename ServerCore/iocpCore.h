@@ -5,7 +5,7 @@
 //	IocpObject
 //---------------
 
-class IocpObject
+class IocpObject : public enable_shared_from_this<IocpObject>
 {
 public:
 	virtual HANDLE GetHandle() abstract;
@@ -25,13 +25,10 @@ public:
 	HANDLE		GetHandle() { return _iocpHandle; };
 
 	// 세션, 소켓 생성시 iocp에 등록하는 함수
-	bool		Register(class IocpObject* iocpObject);
+	bool		Register(IocpObjectRef iocpObject);
 	// iocp의 일감 탐지
 	bool		Dispatch(uint32 timeoutMs = INFINITE);
 
 private:
 	HANDLE		_iocpHandle;
 };
-
-// TEMP
-extern IocpCore	GIocpCore;
