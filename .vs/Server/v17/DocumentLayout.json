@@ -1,102 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "X:\\Github\\Server_std\\",
+  "WorkspaceRootPath": "X:\\GitHub\\Server_std\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\Session.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Session.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\GitHub\\Server_std\\GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\Service.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Service.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\Session.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Session.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\IocpCore.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\IocpCore.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\IocpCore.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\IocpEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\IocpEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\IocpEvent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\IocpEvent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\Listener.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Listener.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\SERVERCORE\\SERVICE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:SERVERCORE\\SERVICE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\IocpCore.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\IocpCore.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\Types.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Types.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\DummyClient\\DummyClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\GitHub\\Server_std\\DummyClient\\DummyClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:DummyClient\\DummyClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\Listener.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Listener.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\Session.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Session.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\Allocator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Allocator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\Service.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Service.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\ObjectPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\ObjectPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\SERVERCORE\\SERVICE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:SERVERCORE\\SERVICE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\NetAddress.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\NetAddress.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\Session.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Session.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\SocketUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\IocpEvent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\IocpEvent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\SocketUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\SocketUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\RefCounting.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\RefCounting.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\SocketUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\SocketUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\Allocator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Allocator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\GitHub\\Server_std\\DummyClient\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:DummyClient\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\IocpEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\IocpEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\MemoryPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\CoreGlobal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\ObjectPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\ObjectPool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\CoreGlobal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\CoreGlobal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\NetAddress.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\Listener.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Listener.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\IocpCore.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\IocpCore.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\Listener.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Listener.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\Allocator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Allocator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\NetAddress.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\NetAddress.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\RefCounting.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\RefCounting.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\Allocator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\Allocator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\MemoryPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\ServerCore\\NetAddress.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\NetAddress.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\SocketUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\SocketUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\GitHub\\Server_std\\SERVERCORE\\TYPES.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:SERVERCORE\\TYPES.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -105,41 +109,54 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 174,
-          "SelectedChildIndex": 12,
+          "DockedWidth": 203,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "DummyClient.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\DummyClient\\DummyClient.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\DummyClient\\DummyClient.cpp",
               "RelativeDocumentMoniker": "DummyClient\\DummyClient.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\DummyClient\\DummyClient.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\DummyClient\\DummyClient.cpp",
               "RelativeToolTip": "DummyClient\\DummyClient.cpp",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-28T01:18:03.479Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
+              "Title": "pch.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\DummyClient\\pch.h",
+              "RelativeDocumentMoniker": "DummyClient\\pch.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\DummyClient\\pch.h",
+              "RelativeToolTip": "DummyClient\\pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-06T08:28:24.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Allocator.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Allocator.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Allocator.h",
               "RelativeDocumentMoniker": "ServerCore\\Allocator.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Allocator.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Allocator.h",
               "RelativeToolTip": "ServerCore\\Allocator.h",
               "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -147,11 +164,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "RefCounting.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\RefCounting.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\RefCounting.h",
               "RelativeDocumentMoniker": "ServerCore\\RefCounting.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\RefCounting.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\RefCounting.h",
               "RelativeToolTip": "ServerCore\\RefCounting.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -159,11 +176,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Listener.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Listener.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Listener.h",
               "RelativeDocumentMoniker": "ServerCore\\Listener.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Listener.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Listener.h",
               "RelativeToolTip": "ServerCore\\Listener.h",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -171,47 +188,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "IocpEvent.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\IocpEvent.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\IocpEvent.h",
               "RelativeDocumentMoniker": "ServerCore\\IocpEvent.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\IocpEvent.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\IocpEvent.h",
               "RelativeToolTip": "ServerCore\\IocpEvent.h",
-              "ViewState": "AgIAADYAAAAAAAAAAAAMwE0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-02T18:13:53.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 14,
               "Title": "CoreGlobal.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\CoreGlobal.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\CoreGlobal.h",
               "RelativeDocumentMoniker": "ServerCore\\CoreGlobal.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\CoreGlobal.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\CoreGlobal.h",
               "RelativeToolTip": "ServerCore\\CoreGlobal.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwMAAAAbAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-30T14:52:52.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 9,
               "Title": "SocketUtils.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\SocketUtils.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\SocketUtils.h",
               "RelativeDocumentMoniker": "ServerCore\\SocketUtils.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\SocketUtils.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\SocketUtils.h",
               "RelativeToolTip": "ServerCore\\SocketUtils.h",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAkAAAARAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-30T11:13:40.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "IocpCore.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\IocpCore.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\IocpCore.h",
               "RelativeDocumentMoniker": "ServerCore\\IocpCore.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\IocpCore.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\IocpCore.h",
               "RelativeToolTip": "ServerCore\\IocpCore.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -219,11 +236,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "NetAddress.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\NetAddress.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\NetAddress.h",
               "RelativeDocumentMoniker": "ServerCore\\NetAddress.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\NetAddress.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\NetAddress.h",
               "RelativeToolTip": "ServerCore\\NetAddress.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -231,48 +248,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Session.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Session.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Session.h",
               "RelativeDocumentMoniker": "ServerCore\\Session.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Session.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Session.h",
               "RelativeToolTip": "ServerCore\\Session.h",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwEQAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAUwEoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T22:51:02.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T22:51:02.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "Types.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Types.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Types.h",
               "RelativeDocumentMoniker": "ServerCore\\Types.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Types.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Types.h",
               "RelativeToolTip": "ServerCore\\Types.h",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAMwBgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAApwBwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-29T09:01:07.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 12,
               "Title": "MemoryPool.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\MemoryPool.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\MemoryPool.h",
               "RelativeDocumentMoniker": "ServerCore\\MemoryPool.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\MemoryPool.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\MemoryPool.h",
               "RelativeToolTip": "ServerCore\\MemoryPool.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvzIAAAAVAAAA",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvzIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-05T10:19:10.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "ObjectPool.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\ObjectPool.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\ObjectPool.h",
               "RelativeDocumentMoniker": "ServerCore\\ObjectPool.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\ObjectPool.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\ObjectPool.h",
               "RelativeToolTip": "ServerCore\\ObjectPool.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -280,67 +296,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Service.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Service.h",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Service.h",
               "RelativeDocumentMoniker": "ServerCore\\Service.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Service.h",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Service.h",
               "RelativeToolTip": "ServerCore\\Service.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwEYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-29T09:35:10.803Z"
             }
           ]
         },
         {
-          "DockedWidth": 193,
+          "DockedWidth": 164,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameServer.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\GameServer.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\GameServer\\GameServer.cpp",
               "RelativeDocumentMoniker": "GameServer\\GameServer.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\GameServer\\GameServer.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\GameServer\\GameServer.cpp",
               "RelativeToolTip": "GameServer\\GameServer.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAIwB8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAEwBYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-30T11:13:28.616Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Session.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Session.cpp",
-              "RelativeDocumentMoniker": "ServerCore\\Session.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Session.cpp",
-              "RelativeToolTip": "ServerCore\\Session.cpp",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAIwKEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-04T22:51:07.574Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3822e751-eb69-4b0e-b301-595a9e4c74d5}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Session.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Session.cpp",
+              "RelativeDocumentMoniker": "ServerCore\\Session.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Session.cpp",
+              "RelativeToolTip": "ServerCore\\Session.cpp",
+              "ViewState": "AgIAABEAAAAAAAAAAAAEwBMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-04T22:51:07.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Service.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Service.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Service.cpp",
               "RelativeDocumentMoniker": "ServerCore\\Service.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Service.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Service.cpp",
               "RelativeToolTip": "ServerCore\\Service.cpp",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAIwFMAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T09:35:12.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Listener.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Listener.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Listener.cpp",
               "RelativeDocumentMoniker": "ServerCore\\Listener.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Listener.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Listener.cpp",
               "RelativeToolTip": "ServerCore\\Listener.cpp",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAI8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -348,11 +381,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IocpEvent.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\IocpEvent.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\IocpEvent.cpp",
               "RelativeDocumentMoniker": "ServerCore\\IocpEvent.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\IocpEvent.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\IocpEvent.cpp",
               "RelativeToolTip": "ServerCore\\IocpEvent.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -360,35 +393,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "IocpCore.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\IocpCore.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\IocpCore.cpp",
               "RelativeDocumentMoniker": "ServerCore\\IocpCore.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\IocpCore.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\IocpCore.cpp",
               "RelativeToolTip": "ServerCore\\IocpCore.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAAawCUAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAABoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-02T17:52:56.454Z"
+              "WhenOpened": "2024-10-02T17:52:56.454Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "SocketUtils.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\SocketUtils.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\SocketUtils.cpp",
               "RelativeDocumentMoniker": "ServerCore\\SocketUtils.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\SocketUtils.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\SocketUtils.cpp",
               "RelativeToolTip": "ServerCore\\SocketUtils.cpp",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAjwFAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAFAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-30T11:13:39.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Allocator.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\Allocator.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\Allocator.cpp",
               "RelativeDocumentMoniker": "ServerCore\\Allocator.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\Allocator.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\Allocator.cpp",
               "RelativeToolTip": "ServerCore\\Allocator.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -396,11 +430,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "MemoryPool.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\MemoryPool.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\MemoryPool.cpp",
               "RelativeDocumentMoniker": "ServerCore\\MemoryPool.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\MemoryPool.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\MemoryPool.cpp",
               "RelativeToolTip": "ServerCore\\MemoryPool.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -408,11 +442,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "NetAddress.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\NetAddress.cpp",
+              "DocumentMoniker": "X:\\GitHub\\Server_std\\ServerCore\\NetAddress.cpp",
               "RelativeDocumentMoniker": "ServerCore\\NetAddress.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\NetAddress.cpp",
+              "ToolTip": "X:\\GitHub\\Server_std\\ServerCore\\NetAddress.cpp",
               "RelativeToolTip": "ServerCore\\NetAddress.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
