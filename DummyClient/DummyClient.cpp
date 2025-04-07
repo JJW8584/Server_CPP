@@ -28,8 +28,6 @@ public:
 
 		std::this_thread::sleep_for(1s);
 		
-		Send((BYTE*)sendBuffer, sizeof(sendBuffer));
-
 		Send(buffer, len);
 		return len;
 	}

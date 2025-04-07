@@ -104,7 +104,7 @@ void Listener::RegisterAccept(AcceptEvent* acceptEvent)
 	// 그래야 나중에 Dispatch해서 이벤트를 가져왔을 때 어떤 세션을 넘겨줬는지 알 수 있음
 
 	DWORD bytesReceived = 0;
-	if (false == SocketUtils::AcceptEx(_socket, session->GetSocket(), session->_recvBuffer, 0, sizeof(SOCKADDR_IN) + 16, sizeof(SOCKADDR_IN) + 16, OUT & bytesReceived, static_cast<LPOVERLAPPED>(acceptEvent)))
+	if (false == SocketUtils::AcceptEx(_socket, session->GetSocket(), session->_recvBuffer.WritePos(), 0, sizeof(SOCKADDR_IN) + 16, sizeof(SOCKADDR_IN) + 16, OUT & bytesReceived, static_cast<LPOVERLAPPED>(acceptEvent)))
 	{
 		const int32 errCode = ::WSAGetLastError();
 		if (errCode != WSA_IO_PENDING/* 접속한 클라가 없어서 그냥 빠져나온 상황 */)
