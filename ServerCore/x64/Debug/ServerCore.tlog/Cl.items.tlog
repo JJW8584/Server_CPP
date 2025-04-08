@@ -13,6 +13,7 @@ X:\GitHub\Server_std\ServerCore\NetAddress.cpp;X:\GitHub\Server_std\ServerCore\x
 X:\GitHub\Server_std\ServerCore\pch.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\pch.obj
 X:\GitHub\Server_std\ServerCore\RecvBuffer.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\RecvBuffer.obj
 X:\GitHub\Server_std\ServerCore\RefCounting.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\RefCounting.obj
+X:\GitHub\Server_std\ServerCore\SendBuffer.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\SendBuffer.obj
 X:\GitHub\Server_std\ServerCore\Service.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\Service.obj
 X:\GitHub\Server_std\ServerCore\Session.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\Session.obj
 X:\GitHub\Server_std\ServerCore\SocketUtils.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\SocketUtils.obj
