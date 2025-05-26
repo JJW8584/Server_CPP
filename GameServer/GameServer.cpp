@@ -5,7 +5,9 @@
 #include "Session.h"
 #include "GameSession.h"
 #include "GameSessionManager.h"
+#include "BufferWriter.h"
 #include <chrono>
+#include "ServerPacketHandler.h"
 
 int main()
 {
@@ -31,14 +33,9 @@ int main()
 	char sendData[] = "Hello World";
 	while (true)
 	{
-		SendBufferRef sendBuffer = GSendBufferManager->Open(4096);
-
-		BYTE* buffer = sendBuffer->Buffer();
-		((PacketHeader*)buffer)->size = (sizeof(sendData) + sizeof(PacketHeader));
-		((PacketHeader*)buffer)->id = 1;
-		::memcpy(&buffer[4], sendData, sizeof(sendData));
-		sendBuffer->Close((sizeof(sendData) + sizeof(PacketHeader)));
-	
+		vector<BuffData> buffs{ BuffData{100, 1.3f}, BuffData{130, 1.8f}, BuffData{200, 2.3f} };
+		SendBufferRef sendBuffer = ServerPacketHandler::Make_S_TEST(1001, 150, 10, buffs);
+		
 		GSessionManager.Broadcast(sendBuffer);
 
 		std::this_thread::sleep_for(250ms);

@@ -1,1 +1,8 @@
-﻿  GameServer.vcxproj -> X:\GitHub\Server_std\Binary\Debug\GameServer.exe
+﻿  GameServer.cpp
+  GameSession.cpp
+  ServerPacketHandler.cpp
+  코드를 생성하고 있습니다...
+X:\GitHub\Server_std\GameServer\ServerPacketHandler.cpp(17,2): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+  (소스 파일 '/ServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+  GameServer.vcxproj -> X:\GitHub\Server_std\Binary\Debug\GameServer.exe
