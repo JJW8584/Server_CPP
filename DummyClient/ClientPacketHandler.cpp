@@ -23,7 +23,7 @@ void ClientPacketHandler::HandlePacket(BYTE* buffer, int32 len)
 // [ PKT_S_TEST ][ BuffListItem  BuffListItem  BuffListItem ]
 struct PKT_S_TEST
 {
-	struct BuffListItem
+	struct BuffsListItem
 	{
 		uint32 buffId;
 		float remainTime;
@@ -42,22 +42,34 @@ struct PKT_S_TEST
 		uint32 size = 0;
 
 		size += sizeof(PKT_S_TEST);
-		size += buffsCount * sizeof(BuffListItem);
+		if (packetSize < size)
+			return false;
+
+		size += buffsCount * sizeof(BuffsListItem);
 		// 계산한 크기가 저장된 패킷 크기랑 다르면 문제가 있음
 		if (size != packetSize)
 			return false;
 
 		// 버프 오프셋(시작위치)부터 버프의 개수만큼 셌는데 패킷 크기를 넘어가면 문제 있음
-		if (buffsOffset + buffsCount * sizeof(BuffListItem) > packetSize)
+		if (buffsOffset + buffsCount * sizeof(BuffsListItem) > packetSize)
 			return false;
 
 		return true;
 	}
-	// 가변데이터
-	//vector<BuffData> buffs;
+
+	using BuffsList = PacketList<PKT_S_TEST::BuffsListItem>;
+
+	BuffsList GetBuffsList()
+	{
+		// 바이트로 선언하여 덧셈 원활하게 함
+		BYTE* data = reinterpret_cast<BYTE*>(this);
+		data += buffsOffset;
+		return BuffsList(reinterpret_cast<PKT_S_TEST::BuffsListItem*>(data), buffsCount);
+	}
 };
 #pragma pack()
 
+// [ PKT_S_TEST ][ BuffListItem  BuffListItem  BuffListItem ]
 void ClientPacketHandler::Handle_S_TEST(BYTE* buffer, int32 len)
 {
 	BufferReader br(buffer, len);
@@ -65,27 +77,32 @@ void ClientPacketHandler::Handle_S_TEST(BYTE* buffer, int32 len)
 	if (len < sizeof(PKT_S_TEST))
 		return;
 
-	PKT_S_TEST pkt;
-	br >> pkt;
+	PKT_S_TEST* pkt = reinterpret_cast<PKT_S_TEST*>(buffer);
+	//PKT_S_TEST pkt;
+	//br >> pkt;
 
-	if (pkt.Validate() == false)
+	if (pkt->Validate() == false)
 		return;
 
-	cout << "ID: " << pkt.id
+	/*cout << "ID: " << pkt.id
 		<< " HP: " << pkt.hp
-		<< " Attack: " << pkt.attack << endl;
+		<< " Attack: " << pkt.attack << endl;*/
 
-	vector<PKT_S_TEST::BuffListItem> buffs;
+	PKT_S_TEST::BuffsList buffs = pkt->GetBuffsList();
 
-	buffs.resize(pkt.buffsCount);
-	for (int i = 0; i < pkt.buffsCount; i++)
-	{
-		br >> buffs[i]; // pragma pack(1)했으므로 문제 없음
-	}
-
-	cout << "BuffCount : " << pkt.buffsCount << endl;
-	for (int32 i = 0; i < pkt.buffsCount; i++)
+	cout << "BuffCount : " << buffs.Count() << endl;
+	for (int32 i = 0; i < pkt->buffsCount; i++)
 	{
 		cout << "BuffInfo : " << buffs[i].buffId << ' ' << buffs[i].remainTime << endl;
+	}
+
+	for (auto it = buffs.begin(); it != buffs.end(); it++)
+	{
+		cout << "BuffInfo : " << it->buffId << ' ' << it->remainTime << endl;
+	}
+
+	for (auto& buff : buffs)
+	{
+		cout << "BuffInfo : " << buff.buffId << ' ' << buff.remainTime << endl;
 	}
 }
