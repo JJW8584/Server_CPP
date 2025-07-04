@@ -1,4 +1,2 @@
 ﻿  ClientPacketHandler.cpp
-  DummyClient.cpp
-  코드를 생성하고 있습니다...
   DummyClient.vcxproj -> X:\GitHub\Server_std\Binary\Debug\DummyClient.exe
