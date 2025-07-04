@@ -27,6 +27,15 @@ struct PKT_S_TEST
 	{
 		uint32 buffId;
 		float remainTime;
+
+		// Victims List
+		uint16 victimsOffset;
+		uint16 victimsCount;
+
+		bool Validate(BYTE* packetStart, uint16 packetSize, OUT uint32& size)
+		{
+
+		}
 	};
 	uint16 packetSize; // 공용 헤더
 	uint16 packetId; // 공용 헤더
@@ -45,15 +54,22 @@ struct PKT_S_TEST
 		if (packetSize < size)
 			return false;
 
-		size += buffsCount * sizeof(BuffsListItem);
-		// 계산한 크기가 저장된 패킷 크기랑 다르면 문제가 있음
-		if (size != packetSize)
-			return false;
-
 		// 버프 오프셋(시작위치)부터 버프의 개수만큼 셌는데 패킷 크기를 넘어가면 문제 있음
 		if (buffsOffset + buffsCount * sizeof(BuffsListItem) > packetSize)
 			return false;
 
+		size += buffsCount * sizeof(BuffsListItem);
+
+		BuffsList buffsList = GetBuffsList();
+		for (int32 i = 0; i < buffsList.Count(); i++)
+		{
+
+		}
+
+		// 계산한 크기가 저장된 패킷 크기랑 다르면 문제가 있음
+		if (size != packetSize)
+			return false;
+	
 		return true;
 	}
 
@@ -94,15 +110,5 @@ void ClientPacketHandler::Handle_S_TEST(BYTE* buffer, int32 len)
 	for (int32 i = 0; i < pkt->buffsCount; i++)
 	{
 		cout << "BuffInfo : " << buffs[i].buffId << ' ' << buffs[i].remainTime << endl;
-	}
-
-	for (auto it = buffs.begin(); it != buffs.end(); it++)
-	{
-		cout << "BuffInfo : " << it->buffId << ' ' << it->remainTime << endl;
-	}
-
-	for (auto& buff : buffs)
-	{
-		cout << "BuffInfo : " << buff.buffId << ' ' << buff.remainTime << endl;
 	}
 }

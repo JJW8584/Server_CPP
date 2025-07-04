@@ -39,8 +39,32 @@ int main()
 	
 	while (true)
 	{
-		vector<BuffData> buffs{ BuffData{100, 1.3f}, BuffData{130, 1.8f}, BuffData{200, 2.3f} };
-		SendBufferRef sendBuffer = ServerPacketHandler::Make_S_TEST(1001, 150, 10, buffs);
+		PKT_S_TEST_WRITE pktWriter(1001, 100, 10);
+
+		PKT_S_TEST_WRITE::BuffsList buffList = pktWriter.ReserveBuffsList(3);
+		buffList[0] = { 100, 1.3f };
+		buffList[1] = { 130, 1.8f };
+		buffList[2] = { 200, 2.3f };
+
+		PKT_S_TEST_WRITE::BuffsVictimsList vic0 = pktWriter.ReserveBuffsVictimsList(&buffList[0], 2);
+		{
+			vic0[0] = 1000;
+			vic0[1] = 2000;
+		}
+
+		PKT_S_TEST_WRITE::BuffsVictimsList vic1 = pktWriter.ReserveBuffsVictimsList(&buffList[0], 1);
+		{
+			vic1[0] = 1000;
+		}
+
+		PKT_S_TEST_WRITE::BuffsVictimsList vic2 = pktWriter.ReserveBuffsVictimsList(&buffList[0], 3);
+		{
+			vic2[0] = 1000;
+			vic2[1] = 2000;
+			vic2[2] = 3000;
+		}
+
+		SendBufferRef sendBuffer = pktWriter.CloseAndReturn();
 		
 		GSessionManager.Broadcast(sendBuffer);
 
