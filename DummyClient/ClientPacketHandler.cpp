@@ -25,7 +25,7 @@ struct PKT_S_TEST
 {
 	struct BuffsListItem
 	{
-		uint32 buffId;
+		uint64 buffId;
 		float remainTime;
 
 		// Victims List
@@ -34,7 +34,11 @@ struct PKT_S_TEST
 
 		bool Validate(BYTE* packetStart, uint16 packetSize, OUT uint32& size)
 		{
+			if (victimsOffset + victimsCount * sizeof(uint64) > packetSize)
+				return false;
 
+			size += victimsCount * sizeof(uint64);
+			return true;
 		}
 	};
 	uint16 packetSize; // 공용 헤더
@@ -63,7 +67,8 @@ struct PKT_S_TEST
 		BuffsList buffsList = GetBuffsList();
 		for (int32 i = 0; i < buffsList.Count(); i++)
 		{
-
+			if (buffsList[i].Validate((BYTE*)this, packetSize, OUT size) == false)
+				return false;
 		}
 
 		// 계산한 크기가 저장된 패킷 크기랑 다르면 문제가 있음
@@ -74,6 +79,7 @@ struct PKT_S_TEST
 	}
 
 	using BuffsList = PacketList<PKT_S_TEST::BuffsListItem>;
+	using BuffsVictimsList = PacketList<uint64>; 
 
 	BuffsList GetBuffsList()
 	{
@@ -81,6 +87,13 @@ struct PKT_S_TEST
 		BYTE* data = reinterpret_cast<BYTE*>(this);
 		data += buffsOffset;
 		return BuffsList(reinterpret_cast<PKT_S_TEST::BuffsListItem*>(data), buffsCount);
+	}
+
+	BuffsVictimsList GetBuffsVictimsList(BuffsListItem* buffsItem)
+	{
+		BYTE* data = reinterpret_cast<BYTE*>(this);
+		data += buffsItem->victimsOffset;
+		return BuffsVictimsList(reinterpret_cast<uint64*>(data), buffsItem->victimsCount);
 	}
 };
 #pragma pack()
@@ -110,5 +123,14 @@ void ClientPacketHandler::Handle_S_TEST(BYTE* buffer, int32 len)
 	for (int32 i = 0; i < pkt->buffsCount; i++)
 	{
 		cout << "BuffInfo : " << buffs[i].buffId << ' ' << buffs[i].remainTime << endl;
+
+		PKT_S_TEST::BuffsVictimsList victims = pkt->GetBuffsVictimsList(&buffs[i]);
+
+		cout << "Victims Count : " << victims.Count() << endl;
+
+		for (int32 j = 0; j < victims.Count(); j++)
+		{
+			cout << "Victim : " << victims[j] << endl;
+		}
 	}
 }

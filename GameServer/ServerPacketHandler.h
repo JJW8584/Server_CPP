@@ -62,7 +62,7 @@ struct PKT_S_TEST
 {
 	struct BuffsListItem
 	{
-		uint32 buffId;
+		uint64 buffId;
 		float remainTime;
 
 		// Victims List

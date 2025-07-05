@@ -48,20 +48,20 @@ int main()
 
 		PKT_S_TEST_WRITE::BuffsVictimsList vic0 = pktWriter.ReserveBuffsVictimsList(&buffList[0], 2);
 		{
-			vic0[0] = 1000;
-			vic0[1] = 2000;
+			vic0[0] = (uint64)1000;
+			vic0[1] = (uint64)2000;
 		}
 
-		PKT_S_TEST_WRITE::BuffsVictimsList vic1 = pktWriter.ReserveBuffsVictimsList(&buffList[0], 1);
+		PKT_S_TEST_WRITE::BuffsVictimsList vic1 = pktWriter.ReserveBuffsVictimsList(&buffList[1], 1);
 		{
-			vic1[0] = 1000;
+			vic1[0] = (uint64)1000;
 		}
 
-		PKT_S_TEST_WRITE::BuffsVictimsList vic2 = pktWriter.ReserveBuffsVictimsList(&buffList[0], 3);
+		PKT_S_TEST_WRITE::BuffsVictimsList vic2 = pktWriter.ReserveBuffsVictimsList(&buffList[2], 3);
 		{
-			vic2[0] = 1000;
-			vic2[1] = 2000;
-			vic2[2] = 3000;
+			vic2[0] = (uint64)1000;
+			vic2[1] = (uint64)2000;
+			vic2[2] = (uint64)3000;
 		}
 
 		SendBufferRef sendBuffer = pktWriter.CloseAndReturn();
