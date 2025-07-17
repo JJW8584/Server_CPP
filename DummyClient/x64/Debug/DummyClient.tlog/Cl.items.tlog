@@ -1,4 +1,4 @@
-X:\GitHub\Server_std\protoc-3.20.2-win64\bin\Protocol.pb.cc;X:\GitHub\Server_std\DummyClient\x64\Debug\Protocol.pb.obj
-X:\GitHub\Server_std\DummyClient\ClientPacketHandler.cpp;X:\GitHub\Server_std\DummyClient\x64\Debug\ClientPacketHandler.obj
-X:\GitHub\Server_std\DummyClient\DummyClient.cpp;X:\GitHub\Server_std\DummyClient\x64\Debug\DummyClient.obj
-X:\GitHub\Server_std\DummyClient\pch.cpp;X:\GitHub\Server_std\DummyClient\x64\Debug\pch.obj
+X:\Github\Server_std\protoc-3.20.2-win64\bin\Protocol.pb.cc;X:\Github\Server_std\DummyClient\x64\Debug\Protocol.pb.obj
+X:\Github\Server_std\DummyClient\ClientPacketHandler.cpp;X:\Github\Server_std\DummyClient\x64\Debug\ClientPacketHandler.obj
+X:\Github\Server_std\DummyClient\DummyClient.cpp;X:\Github\Server_std\DummyClient\x64\Debug\DummyClient.obj
+X:\Github\Server_std\DummyClient\pch.cpp;X:\Github\Server_std\DummyClient\x64\Debug\pch.obj

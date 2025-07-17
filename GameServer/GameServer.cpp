@@ -9,6 +9,7 @@
 #include <chrono>
 #include "ServerPacketHandler.h"
 #include <tchar.h>
+#include "Protocol.pb.h"
 
 int main()
 {
@@ -39,32 +40,26 @@ int main()
 	
 	while (true)
 	{
-		PKT_S_TEST_WRITE pktWriter(1001, 100, 10);
-
-		PKT_S_TEST_WRITE::BuffsList buffList = pktWriter.ReserveBuffsList(3);
-		buffList[0] = { 100, 1.3f };
-		buffList[1] = { 130, 1.8f };
-		buffList[2] = { 200, 2.3f };
-
-		PKT_S_TEST_WRITE::BuffsVictimsList vic0 = pktWriter.ReserveBuffsVictimsList(&buffList[0], 2);
+		Protocol::S_TEST pkt;
+		pkt.set_id(1000);
+		pkt.set_hp(200);
+		pkt.set_attack(20);
 		{
-			vic0[0] = (uint64)1000;
-			vic0[1] = (uint64)2000;
+			Protocol::BuffData* buf = pkt.add_buffs();
+			buf->set_buffid(100);
+			buf->set_remaintime(3.5f);
+			buf->add_victims(5);
+		}
+		{
+			Protocol::BuffData* buf = pkt.add_buffs();
+			buf->set_buffid(200);
+			buf->set_remaintime(2.3f);
+			buf->add_victims(4);
+			buf->add_victims(1);
 		}
 
-		PKT_S_TEST_WRITE::BuffsVictimsList vic1 = pktWriter.ReserveBuffsVictimsList(&buffList[1], 1);
-		{
-			vic1[0] = (uint64)1000;
-		}
+		SendBufferRef sendBuffer = ServerPacketHandler::MakeSendBuffer(pkt);
 
-		PKT_S_TEST_WRITE::BuffsVictimsList vic2 = pktWriter.ReserveBuffsVictimsList(&buffList[2], 3);
-		{
-			vic2[0] = (uint64)1000;
-			vic2[1] = (uint64)2000;
-			vic2[2] = (uint64)3000;
-		}
-
-		SendBufferRef sendBuffer = pktWriter.CloseAndReturn();
 		
 		GSessionManager.Broadcast(sendBuffer);
 
