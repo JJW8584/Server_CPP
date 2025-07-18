@@ -1,5 +1,32 @@
-﻿  Protocol.pb.cc
+﻿Struct.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
+Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
+  X:Enum.pb.h
+  1개 파일이 복사되었습니다.
+  X:Enum.pb.cc
+  1개 파일이 복사되었습니다.
+  X:Struct.pb.h
+  1개 파일이 복사되었습니다.
+  X:Struct.pb.cc
+  1개 파일이 복사되었습니다.
+  X:Protocol.pb.h
+  1개 파일이 복사되었습니다.
+  X:Protocol.pb.cc
+  1개 파일이 복사되었습니다.
+  X:Enum.pb.h
+  1개 파일이 복사되었습니다.
+  X:Enum.pb.cc
+  1개 파일이 복사되었습니다.
+  X:Struct.pb.h
+  1개 파일이 복사되었습니다.
+  X:Struct.pb.cc
+  1개 파일이 복사되었습니다.
+  X:Protocol.pb.h
+  1개 파일이 복사되었습니다.
+  X:Protocol.pb.cc
+  1개 파일이 복사되었습니다.
   ClientPacketHandler.cpp
-  DummyClient.cpp
+  Enum.pb.cc
+  Protocol.pb.cc
+  Struct.pb.cc
   코드를 생성하고 있습니다...
-  DummyClient.vcxproj -> X:\Github\Server_std\Binary\Debug\DummyClient.exe
+  DummyClient.vcxproj -> X:\GitHub\Server_std\Binary\Debug\DummyClient.exe
