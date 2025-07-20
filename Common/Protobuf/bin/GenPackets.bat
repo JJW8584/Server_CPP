@@ -26,6 +26,9 @@ XCOPY /Y ServerPacketHandler.h "../../../DummyClient"
 
 DEL /S /Q /F *.pb.h
 DEL /S /Q /F *.pb.cc
-DEL /S /Q /F *.h
+
+FOR %%f IN (*.h) DO (
+    IF /I NOT "%%f"=="PacketHandler.h" DEL /F /Q "%%f"
+)
 
 PAUSE

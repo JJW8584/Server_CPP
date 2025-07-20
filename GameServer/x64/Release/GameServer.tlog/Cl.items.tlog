@@ -1,6 +1,8 @@
-X:\Github\Server_std\protoc-3.20.2-win64\bin\Protocol.pb.cc;X:\Github\Server_std\GameServer\x64\Release\Protocol.pb.obj
+X:\Github\Server_std\GameServer\Enum.pb.cc;X:\Github\Server_std\GameServer\x64\Release\Enum.pb.obj
 X:\Github\Server_std\GameServer\GameServer.cpp;X:\Github\Server_std\GameServer\x64\Release\GameServer.obj
 X:\Github\Server_std\GameServer\GameSession.cpp;X:\Github\Server_std\GameServer\x64\Release\GameSession.obj
 X:\Github\Server_std\GameServer\GameSessionManager.cpp;X:\Github\Server_std\GameServer\x64\Release\GameSessionManager.obj
 X:\Github\Server_std\GameServer\pch.cpp;X:\Github\Server_std\GameServer\x64\Release\pch.obj
-X:\Github\Server_std\GameServer\ServerPacketHandler.cpp;X:\Github\Server_std\GameServer\x64\Release\ServerPacketHandler.obj
+X:\Github\Server_std\GameServer\Protocol.pb.cc;X:\Github\Server_std\GameServer\x64\Release\Protocol.pb.obj
+X:\Github\Server_std\GameServer\ClientPacketHandler.cpp;X:\Github\Server_std\GameServer\x64\Release\ClientPacketHandler.obj
+X:\Github\Server_std\GameServer\Struct.pb.cc;X:\Github\Server_std\GameServer\x64\Release\Struct.pb.obj

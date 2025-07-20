@@ -3,64 +3,20 @@
   "WorkspaceRootPath": "X:\\Github\\Server_std\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\DummyClient\\DummyClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:DummyClient\\DummyClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\DummyClient\\ServerPacketHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:DummyClient\\ServerPacketHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\SendBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\SendBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\ClientPacketHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\ClientPacketHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameSession.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameSession.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\DummyClient\\DummyClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:DummyClient\\DummyClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Protocol.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:Common\\Protobuf\\bin\\Protocol.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\DummyClient\\ServerPacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:DummyClient\\ServerPacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameSession.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameSession.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\Common\\Protobuf\\bin\\GenPackets.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:Common\\Protobuf\\bin\\GenPackets.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|X:\\GitHub\\Server_std\\Tools\\PacketGenerator\\MakeExe.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Tools\\PacketGenerator\\MakeExe.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|X:\\Github\\Server_std\\Tools\\PacketGenerator\\ProtoParser.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|solutionrelative:Tools\\PacketGenerator\\ProtoParser.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|X:\\Github\\Server_std\\Tools\\PacketGenerator\\PacketGenerator.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|solutionrelative:Tools\\PacketGenerator\\PacketGenerator.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\ClientPacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\ClientPacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|X:\\Github\\Server_std\\Tools\\PacketGenerator\\Templates\\PacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|solutionrelative:Tools\\PacketGenerator\\Templates\\PacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\SERVERCORE\\BUFFERWRITER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:SERVERCORE\\BUFFERWRITER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\DummyClient\\ServerPacketHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:DummyClient\\ServerPacketHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\BufferReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -71,8 +27,59 @@
       "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\BufferWriter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\SendBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\SendBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\Room.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\Room.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameSession.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameSession.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameSession.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameSession.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|X:\\\uCC44\uD305\u002B\uC2E4\uC2B5_\uC18C\uC2A4\uCF54\uB4DC\\DummyClient\\DummyClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|X:\\Github\\Server_std\\DummyClient\\ServerPacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BCE5C0EC-0C7F-4ABB-9BCB-CD3F33DC0F5D}|DummyClient\\DummyClient.vcxproj|solutionrelative:DummyClient\\ServerPacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\ClientPacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\ClientPacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\Room.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\Room.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Struct.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:Common\\Protobuf\\bin\\Struct.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|X:\\Github\\Server_std\\Tools\\PacketGenerator\\Templates\\PacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|solutionrelative:Tools\\PacketGenerator\\Templates\\PacketHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Enum.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:Common\\Protobuf\\bin\\Enum.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Protocol.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:Common\\Protobuf\\bin\\Protocol.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -81,18 +88,18 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 189,
+          "DockedWidth": 182,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DummyClient.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\DummyClient\\DummyClient.cpp",
               "RelativeDocumentMoniker": "DummyClient\\DummyClient.cpp",
               "ToolTip": "X:\\Github\\Server_std\\DummyClient\\DummyClient.cpp",
               "RelativeToolTip": "DummyClient\\DummyClient.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAcwEIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-28T01:18:03.479Z",
               "IsPinned": true,
@@ -124,133 +131,123 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MakeExe.bat",
-              "DocumentMoniker": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\MakeExe.bat",
-              "RelativeDocumentMoniker": "Tools\\PacketGenerator\\MakeExe.bat",
-              "ToolTip": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\MakeExe.bat",
-              "RelativeToolTip": "Tools\\PacketGenerator\\MakeExe.bat",
+              "DocumentIndex": 11,
+              "Title": "DummyClient.cpp",
+              "DocumentMoniker": "X:\\\uCC44\uD305\u002B\uC2E4\uC2B5_\uC18C\uC2A4\uCF54\uB4DC\\DummyClient\\DummyClient.cpp",
+              "RelativeDocumentMoniker": "..\\..\\\uCC44\uD305\u002B\uC2E4\uC2B5_\uC18C\uC2A4\uCF54\uB4DC\\DummyClient\\DummyClient.cpp",
+              "ToolTip": "X:\\\uCC44\uD305\u002B\uC2E4\uC2B5_\uC18C\uC2A4\uCF54\uB4DC\\DummyClient\\DummyClient.cpp",
+              "RelativeToolTip": "..\\..\\\uCC44\uD305\u002B\uC2E4\uC2B5_\uC18C\uC2A4\uCF54\uB4DC\\DummyClient\\DummyClient.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-20T17:51:12.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Enum.proto",
+              "DocumentMoniker": "X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Enum.proto",
+              "RelativeDocumentMoniker": "Common\\Protobuf\\bin\\Enum.proto",
+              "ToolTip": "X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Enum.proto",
+              "RelativeToolTip": "Common\\Protobuf\\bin\\Enum.proto",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVDhPY6AI/P//n7G1s\u002Bc/lEsWYILSRANbaysUmgHkgl\u002B/fpGFQXqxuuDkyZMMEydOBNOEAIYBixYvZhARl2QIiohi4BeTYJg\u002BcxZUBjtAMeDSpUsM1rb2DEoKcgwnDx9kUFOQZ7BxcQeL4wIoBuzfv5\u002BBjZOTYe2aNQyRkZEM69auYWBjY2VYv3UHw4otuxl2HzzK8OPHD6hqCEAxwNHRkeHrt28MQcEhDMuXL2cIANLP33xgUPdNYdB3dGN4JajGcPrSVahqCEAxQE9Pj\u002BHE4UMMV\u002B89ZNC1tGW4dOcBw7kzZxn0lYQZLj/5zGCoLMrw9NU7qGoIwAjEhLhYhm9vXjDsWLOC4fe7lwxm\u002BloMl\u002B69ZdCV4WW4cO8Ng4meNlQlBLBAaRRgbm4OxiAA8vOPU2cZLj34xqCnpswgIyYFFocBDBegAw4ODgYXO2uGcB9XBh01JTAfGVCcFwYaMDAAABi9qE6NKlarAAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-07-19T10:22:30.47Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-07-20T15:20:32.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GenPackets.bat",
-              "DocumentMoniker": "X:\\Github\\Server_std\\Common\\Protobuf\\bin\\GenPackets.bat",
-              "RelativeDocumentMoniker": "Common\\Protobuf\\bin\\GenPackets.bat",
-              "ToolTip": "X:\\Github\\Server_std\\Common\\Protobuf\\bin\\GenPackets.bat",
-              "RelativeToolTip": "Common\\Protobuf\\bin\\GenPackets.bat",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAUAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVDhPY6AI/P//n7G1s\u002Bc/lEsWYILSRANbaysUmgHkgl\u002B/fpGFQXqxuuDkyZMMEydOBNOEAIYBixYvZhARl2QIiohi4BeTYJg\u002BcxZUBjtAMeDSpUsM1rb2DEoKcgwnDx9kUFOQZ7BxcQeL4wIoBuzfv5\u002BBjZOTYe2aNQyRkZEM69auYWBjY2VYv3UHw4otuxl2HzzK8OPHD6hqCEAxwNHRkeHrt28MQcEhDMuXL2cIANLP33xgUPdNYdB3dGN4JajGcPrSVahqCEAxQE9Pj\u002BHE4UMMV\u002B89ZNC1tGW4dOcBw7kzZxn0lYQZLj/5zGCoLMrw9NU7qGoIwAjEhLhYhm9vXjDsWLOC4fe7lwxm\u002BloMl\u002B69ZdCV4WW4cO8Ng4meNlQlBLBAaRRgbm4OxiAA8vOPU2cZLj34xqCnpswgIyYFFocBDBegAw4ODgYXO2uGcB9XBh01JTAfGVCcFwYaMDAAABi9qE6NKlarAAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-07-19T10:04:42.591Z",
+              "DocumentIndex": 16,
+              "Title": "Struct.proto",
+              "DocumentMoniker": "X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Struct.proto",
+              "RelativeDocumentMoniker": "Common\\Protobuf\\bin\\Struct.proto",
+              "ToolTip": "X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Struct.proto",
+              "RelativeToolTip": "Common\\Protobuf\\bin\\Struct.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-07-20T15:19:14.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "PacketHandler.h",
               "DocumentMoniker": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\Templates\\PacketHandler.h",
               "RelativeDocumentMoniker": "Tools\\PacketGenerator\\Templates\\PacketHandler.h",
               "ToolTip": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\Templates\\PacketHandler.h",
               "RelativeToolTip": "Tools\\PacketGenerator\\Templates\\PacketHandler.h",
-              "ViewState": "AgIAADEAAAAAAAAAAADwvzoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-19T09:46:08.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProtoParser.py",
-              "DocumentMoniker": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\ProtoParser.py",
-              "RelativeDocumentMoniker": "Tools\\PacketGenerator\\ProtoParser.py",
-              "ToolTip": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\ProtoParser.py",
-              "RelativeToolTip": "Tools\\PacketGenerator\\ProtoParser.py",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-07-19T09:05:53.987Z",
+              "WhenOpened": "2025-07-19T09:46:08.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PacketGenerator.py",
-              "DocumentMoniker": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\PacketGenerator.py",
-              "RelativeDocumentMoniker": "Tools\\PacketGenerator\\PacketGenerator.py",
-              "ToolTip": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\PacketGenerator.py",
-              "RelativeToolTip": "Tools\\PacketGenerator\\PacketGenerator.py",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBYAAAAfAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-07-19T09:05:53.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameSession.cpp",
-              "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\GameSession.cpp",
-              "RelativeDocumentMoniker": "GameServer\\GameSession.cpp",
-              "ToolTip": "X:\\Github\\Server_std\\GameServer\\GameSession.cpp",
-              "RelativeToolTip": "GameServer\\GameSession.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-18T12:35:38.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BufferWriter.h",
-              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\BufferWriter.h",
-              "RelativeDocumentMoniker": "ServerCore\\BufferWriter.h",
-              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\BufferWriter.h",
-              "RelativeToolTip": "ServerCore\\BufferWriter.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Player.h",
+              "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\Player.h",
+              "RelativeDocumentMoniker": "GameServer\\Player.h",
+              "ToolTip": "X:\\Github\\Server_std\\GameServer\\Player.h",
+              "RelativeToolTip": "GameServer\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-04T12:21:52.975Z"
+              "WhenOpened": "2025-07-20T16:45:17.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
+              "Title": "Room.h",
+              "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\Room.h",
+              "RelativeDocumentMoniker": "GameServer\\Room.h",
+              "ToolTip": "X:\\Github\\Server_std\\GameServer\\Room.h",
+              "RelativeToolTip": "GameServer\\Room.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-20T16:45:24.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ServerPacketHandler.h",
               "DocumentMoniker": "X:\\Github\\Server_std\\DummyClient\\ServerPacketHandler.h",
               "RelativeDocumentMoniker": "DummyClient\\ServerPacketHandler.h",
               "ToolTip": "X:\\Github\\Server_std\\DummyClient\\ServerPacketHandler.h",
               "RelativeToolTip": "DummyClient\\ServerPacketHandler.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-26T09:52:11.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ClientPacketHandler.h",
               "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\ClientPacketHandler.h",
               "RelativeDocumentMoniker": "GameServer\\ClientPacketHandler.h",
               "ToolTip": "X:\\Github\\Server_std\\GameServer\\ClientPacketHandler.h",
               "RelativeToolTip": "GameServer\\ClientPacketHandler.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T09:52:50.079Z"
+              "WhenOpened": "2025-05-26T09:52:50.079Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 178,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 185,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GameServer.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\GameServer.cpp",
               "RelativeDocumentMoniker": "GameServer\\GameServer.cpp",
               "ToolTip": "X:\\Github\\Server_std\\GameServer\\GameServer.cpp",
               "RelativeToolTip": "GameServer\\GameServer.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-30T11:13:28.616Z",
               "IsPinned": true,
@@ -274,59 +271,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "GameSession.cpp",
+              "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\GameSession.cpp",
+              "RelativeDocumentMoniker": "GameServer\\GameSession.cpp",
+              "ToolTip": "X:\\Github\\Server_std\\GameServer\\GameSession.cpp",
+              "RelativeToolTip": "GameServer\\GameSession.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-20T17:54:37.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\Player.cpp",
+              "RelativeDocumentMoniker": "GameServer\\Player.cpp",
+              "ToolTip": "X:\\Github\\Server_std\\GameServer\\Player.cpp",
+              "RelativeToolTip": "GameServer\\Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-20T16:45:27.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Room.cpp",
+              "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\Room.cpp",
+              "RelativeDocumentMoniker": "GameServer\\Room.cpp",
+              "ToolTip": "X:\\Github\\Server_std\\GameServer\\Room.cpp",
+              "RelativeToolTip": "GameServer\\Room.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-20T16:51:32.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "GameSession.h",
               "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\GameSession.h",
               "RelativeDocumentMoniker": "GameServer\\GameSession.h",
               "ToolTip": "X:\\Github\\Server_std\\GameServer\\GameSession.h",
               "RelativeToolTip": "GameServer\\GameSession.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-07-19T10:33:13.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "Protocol.proto",
               "DocumentMoniker": "X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Protocol.proto",
               "RelativeDocumentMoniker": "Common\\Protobuf\\bin\\Protocol.proto",
               "ToolTip": "X:\\Github\\Server_std\\Common\\Protobuf\\bin\\Protocol.proto",
               "RelativeToolTip": "Common\\Protobuf\\bin\\Protocol.proto",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
               "WhenOpened": "2025-07-19T06:48:40.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ServerPacketHandler.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\DummyClient\\ServerPacketHandler.cpp",
               "RelativeDocumentMoniker": "DummyClient\\ServerPacketHandler.cpp",
               "ToolTip": "X:\\Github\\Server_std\\DummyClient\\ServerPacketHandler.cpp",
               "RelativeToolTip": "DummyClient\\ServerPacketHandler.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwBwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-26T09:52:21.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ClientPacketHandler.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\ClientPacketHandler.cpp",
               "RelativeDocumentMoniker": "GameServer\\ClientPacketHandler.cpp",
               "ToolTip": "X:\\Github\\Server_std\\GameServer\\ClientPacketHandler.cpp",
               "RelativeToolTip": "GameServer\\ClientPacketHandler.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwEwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-26T09:53:06.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "BufferWriter.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\BufferWriter.cpp",
               "RelativeDocumentMoniker": "ServerCore\\BufferWriter.cpp",
@@ -334,11 +370,12 @@
               "RelativeToolTip": "ServerCore\\BufferWriter.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-24T08:36:39.122Z"
+              "WhenOpened": "2025-05-24T08:36:39.122Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "BufferReader.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\BufferReader.cpp",
               "RelativeDocumentMoniker": "ServerCore\\BufferReader.cpp",
@@ -346,19 +383,21 @@
               "RelativeToolTip": "ServerCore\\BufferReader.cpp",
               "ViewState": "AgIAAAEAAAAAAAAAAAArwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-24T08:35:57.028Z"
+              "WhenOpened": "2025-05-24T08:35:57.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
               "Title": "SendBuffer.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\SendBuffer.cpp",
               "RelativeDocumentMoniker": "ServerCore\\SendBuffer.cpp",
               "ToolTip": "X:\\Github\\Server_std\\ServerCore\\SendBuffer.cpp",
               "RelativeToolTip": "ServerCore\\SendBuffer.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-08T12:53:36.507Z"
+              "WhenOpened": "2025-04-08T12:53:36.507Z",
+              "EditorCaption": ""
             }
           ]
         }

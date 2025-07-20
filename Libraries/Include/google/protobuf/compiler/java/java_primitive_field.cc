@@ -40,13 +40,13 @@
 
 #include <google/protobuf/stubs/logging.h>
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/io/printer.h>
-#include <google/protobuf/wire_format.h>
-#include <google/protobuf/stubs/strutil.h>
 #include <google/protobuf/compiler/java/java_context.h>
 #include <google/protobuf/compiler/java/java_doc_comment.h>
 #include <google/protobuf/compiler/java/java_helpers.h>
 #include <google/protobuf/compiler/java/java_name_resolver.h>
+#include <google/protobuf/io/printer.h>
+#include <google/protobuf/wire_format.h>
+#include <google/protobuf/stubs/strutil.h>
 
 namespace google {
 namespace protobuf {
@@ -54,6 +54,7 @@ namespace compiler {
 namespace java {
 
 using internal::WireFormat;
+using internal::WireFormatLite;
 
 namespace {
 
@@ -159,25 +160,12 @@ void SetPrimitiveVariables(const FieldDescriptor* descriptor,
     (*variables)["set_has_field_bit_builder"] = "";
     (*variables)["clear_has_field_bit_builder"] = "";
 
-    switch (descriptor->type()) {
-      case FieldDescriptor::TYPE_BYTES:
-        (*variables)["is_field_present_message"] =
-            "!" + (*variables)["name"] + "_.isEmpty()";
-        break;
-      case FieldDescriptor::TYPE_FLOAT:
-        (*variables)["is_field_present_message"] =
-            "java.lang.Float.floatToRawIntBits(" + (*variables)["name"] +
-            "_) != 0";
-        break;
-      case FieldDescriptor::TYPE_DOUBLE:
-        (*variables)["is_field_present_message"] =
-            "java.lang.Double.doubleToRawLongBits(" + (*variables)["name"] +
-            "_) != 0";
-        break;
-      default:
-        (*variables)["is_field_present_message"] =
-            (*variables)["name"] + "_ != " + (*variables)["default"];
-        break;
+    if (descriptor->type() == FieldDescriptor::TYPE_BYTES) {
+      (*variables)["is_field_present_message"] =
+          "!" + (*variables)["name"] + "_.isEmpty()";
+    } else {
+      (*variables)["is_field_present_message"] =
+          (*variables)["name"] + "_ != " + (*variables)["default"];
     }
   }
 
@@ -185,6 +173,13 @@ void SetPrimitiveVariables(const FieldDescriptor* descriptor,
   (*variables)["get_mutable_bit_builder"] = GenerateGetBit(builderBitIndex);
   (*variables)["set_mutable_bit_builder"] = GenerateSetBit(builderBitIndex);
   (*variables)["clear_mutable_bit_builder"] = GenerateClearBit(builderBitIndex);
+
+  // For repeated fields, one bit is used for whether the array is immutable
+  // in the parsing constructor.
+  (*variables)["get_mutable_bit_parser"] =
+      GenerateGetBitMutableLocal(builderBitIndex);
+  (*variables)["set_mutable_bit_parser"] =
+      GenerateSetBitMutableLocal(builderBitIndex);
 
   (*variables)["get_has_field_bit_from_local"] =
       GenerateGetBitFromLocal(builderBitIndex);
@@ -313,7 +308,7 @@ void ImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
     io::Printer* printer) const {
   WriteFieldDocComment(printer, descriptor_);
   printer->Print(variables_,
-                 "$kt_deprecation$public var $kt_name$: $kt_type$\n"
+                 "$kt_deprecation$var $kt_name$: $kt_type$\n"
                  "  @JvmName(\"${$get$kt_capitalized_name$$}$\")\n"
                  "  get() = $kt_dsl_builder$.${$get$capitalized_name$$}$()\n"
                  "  @JvmName(\"${$set$kt_capitalized_name$$}$\")\n"
@@ -324,17 +319,16 @@ void ImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
   WriteFieldAccessorDocComment(printer, descriptor_, CLEARER,
                                /* builder */ false);
   printer->Print(variables_,
-                 "public fun ${$clear$kt_capitalized_name$$}$() {\n"
+                 "fun ${$clear$kt_capitalized_name$$}$() {\n"
                  "  $kt_dsl_builder$.${$clear$capitalized_name$$}$()\n"
                  "}\n");
 
   if (HasHazzer(descriptor_)) {
     WriteFieldAccessorDocComment(printer, descriptor_, HAZZER);
-    printer->Print(
-        variables_,
-        "public fun ${$has$kt_capitalized_name$$}$(): kotlin.Boolean {\n"
-        "  return $kt_dsl_builder$.${$has$capitalized_name$$}$()\n"
-        "}\n");
+    printer->Print(variables_,
+                   "fun ${$has$kt_capitalized_name$$}$(): kotlin.Boolean {\n"
+                   "  return $kt_dsl_builder$.${$has$capitalized_name$$}$()\n"
+                   "}\n");
   }
 }
 
@@ -393,11 +387,16 @@ void ImmutablePrimitiveFieldGenerator::GenerateBuildingCode(
   }
 }
 
-void ImmutablePrimitiveFieldGenerator::GenerateBuilderParsingCode(
+void ImmutablePrimitiveFieldGenerator::GenerateParsingCode(
     io::Printer* printer) const {
   printer->Print(variables_,
-                 "$name$_ = input.read$capitalized_type$();\n"
-                 "$set_has_field_bit_builder$\n");
+                 "$set_has_field_bit_message$\n"
+                 "$name$_ = input.read$capitalized_type$();\n");
+}
+
+void ImmutablePrimitiveFieldGenerator::GenerateParsingDoneCode(
+    io::Printer* printer) const {
+  // noop for primitives.
 }
 
 void ImmutablePrimitiveFieldGenerator::GenerateSerializationCode(
@@ -602,12 +601,6 @@ void ImmutablePrimitiveOneofFieldGenerator::GenerateBuilderMembers(
   printer->Annotate("{", "}", descriptor_);
 }
 
-void ImmutablePrimitiveOneofFieldGenerator::GenerateBuilderClearCode(
-    io::Printer* printer) const {
-  // No-Op: When a primitive field is in a oneof, clearing the oneof clears that
-  // field.
-}
-
 void ImmutablePrimitiveOneofFieldGenerator::GenerateBuildingCode(
     io::Printer* printer) const {
   printer->Print(variables_,
@@ -622,11 +615,11 @@ void ImmutablePrimitiveOneofFieldGenerator::GenerateMergingCode(
                  "set$capitalized_name$(other.get$capitalized_name$());\n");
 }
 
-void ImmutablePrimitiveOneofFieldGenerator::GenerateBuilderParsingCode(
+void ImmutablePrimitiveOneofFieldGenerator::GenerateParsingCode(
     io::Printer* printer) const {
   printer->Print(variables_,
-                 "$oneof_name$_ = input.read$capitalized_type$();\n"
-                 "$set_oneof_case_message$;\n");
+                 "$set_oneof_case_message$;\n"
+                 "$oneof_name$_ = input.read$capitalized_type$();\n");
 }
 
 void ImmutablePrimitiveOneofFieldGenerator::GenerateSerializationCode(
@@ -843,12 +836,12 @@ void RepeatedImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
       " */\n"
       "@kotlin.OptIn"
       "(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)\n"
-      "public class ${$$kt_capitalized_name$Proxy$}$ private constructor()"
+      "class ${$$kt_capitalized_name$Proxy$}$ private constructor()"
       " : com.google.protobuf.kotlin.DslProxy()\n");
 
   WriteFieldDocComment(printer, descriptor_);
   printer->Print(variables_,
-                 "$kt_deprecation$ public val $kt_name$: "
+                 "$kt_deprecation$ val $kt_name$: "
                  "com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>\n"
                  "  @kotlin.jvm.JvmSynthetic\n"
@@ -861,7 +854,7 @@ void RepeatedImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
   printer->Print(variables_,
                  "@kotlin.jvm.JvmSynthetic\n"
                  "@kotlin.jvm.JvmName(\"add$kt_capitalized_name$\")\n"
-                 "public fun com.google.protobuf.kotlin.DslList"
+                 "fun com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
                  "add(value: $kt_type$) {\n"
                  "  $kt_dsl_builder$.${$add$capitalized_name$$}$(value)\n"
@@ -872,8 +865,7 @@ void RepeatedImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
   printer->Print(variables_,
                  "@kotlin.jvm.JvmSynthetic\n"
                  "@kotlin.jvm.JvmName(\"plusAssign$kt_capitalized_name$\")\n"
-                 "@Suppress(\"NOTHING_TO_INLINE\")\n"
-                 "public inline operator fun com.google.protobuf.kotlin.DslList"
+                 "inline operator fun com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
                  "plusAssign(value: $kt_type$) {\n"
                  "  add(value)\n"
@@ -884,7 +876,7 @@ void RepeatedImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
   printer->Print(variables_,
                  "@kotlin.jvm.JvmSynthetic\n"
                  "@kotlin.jvm.JvmName(\"addAll$kt_capitalized_name$\")\n"
-                 "public fun com.google.protobuf.kotlin.DslList"
+                 "fun com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
                  "addAll(values: kotlin.collections.Iterable<$kt_type$>) {\n"
                  "  $kt_dsl_builder$.${$addAll$capitalized_name$$}$(values)\n"
@@ -896,8 +888,7 @@ void RepeatedImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
       variables_,
       "@kotlin.jvm.JvmSynthetic\n"
       "@kotlin.jvm.JvmName(\"plusAssignAll$kt_capitalized_name$\")\n"
-      "@Suppress(\"NOTHING_TO_INLINE\")\n"
-      "public inline operator fun com.google.protobuf.kotlin.DslList"
+      "inline operator fun com.google.protobuf.kotlin.DslList"
       "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
       "plusAssign(values: kotlin.collections.Iterable<$kt_type$>) {\n"
       "  addAll(values)\n"
@@ -909,7 +900,7 @@ void RepeatedImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
       variables_,
       "@kotlin.jvm.JvmSynthetic\n"
       "@kotlin.jvm.JvmName(\"set$kt_capitalized_name$\")\n"
-      "public operator fun com.google.protobuf.kotlin.DslList"
+      "operator fun com.google.protobuf.kotlin.DslList"
       "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
       "set(index: kotlin.Int, value: $kt_type$) {\n"
       "  $kt_dsl_builder$.${$set$capitalized_name$$}$(index, value)\n"
@@ -920,7 +911,7 @@ void RepeatedImmutablePrimitiveFieldGenerator::GenerateKotlinDslMembers(
   printer->Print(variables_,
                  "@kotlin.jvm.JvmSynthetic\n"
                  "@kotlin.jvm.JvmName(\"clear$kt_capitalized_name$\")\n"
-                 "public fun com.google.protobuf.kotlin.DslList"
+                 "fun com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
                  "clear() {\n"
                  "  $kt_dsl_builder$.${$clear$capitalized_name$$}$()\n"
@@ -976,24 +967,38 @@ void RepeatedImmutablePrimitiveFieldGenerator::GenerateBuildingCode(
                  "result.$name$_ = $name$_;\n");
 }
 
-void RepeatedImmutablePrimitiveFieldGenerator::GenerateBuilderParsingCode(
+void RepeatedImmutablePrimitiveFieldGenerator::GenerateParsingCode(
     io::Printer* printer) const {
   printer->Print(variables_,
-                 "$type$ v = input.read$capitalized_type$();\n"
-                 "ensure$capitalized_name$IsMutable();\n"
-                 "$repeated_add$(v);\n");
+                 "if (!$get_mutable_bit_parser$) {\n"
+                 "  $name$_ = $create_list$;\n"
+                 "  $set_mutable_bit_parser$;\n"
+                 "}\n"
+                 "$repeated_add$(input.read$capitalized_type$());\n");
 }
 
-void RepeatedImmutablePrimitiveFieldGenerator::
-    GenerateBuilderParsingCodeFromPacked(io::Printer* printer) const {
+void RepeatedImmutablePrimitiveFieldGenerator::GenerateParsingCodeFromPacked(
+    io::Printer* printer) const {
+  printer->Print(
+      variables_,
+      "int length = input.readRawVarint32();\n"
+      "int limit = input.pushLimit(length);\n"
+      "if (!$get_mutable_bit_parser$ && input.getBytesUntilLimit() > 0) {\n"
+      "  $name$_ = $create_list$;\n"
+      "  $set_mutable_bit_parser$;\n"
+      "}\n"
+      "while (input.getBytesUntilLimit() > 0) {\n"
+      "  $repeated_add$(input.read$capitalized_type$());\n"
+      "}\n"
+      "input.popLimit(limit);\n");
+}
+
+void RepeatedImmutablePrimitiveFieldGenerator::GenerateParsingDoneCode(
+    io::Printer* printer) const {
   printer->Print(variables_,
-                 "int length = input.readRawVarint32();\n"
-                 "int limit = input.pushLimit(length);\n"
-                 "ensure$capitalized_name$IsMutable();\n"
-                 "while (input.getBytesUntilLimit() > 0) {\n"
-                 "  $repeated_add$(input.read$capitalized_type$());\n"
-                 "}\n"
-                 "input.popLimit(limit);\n");
+                 "if ($get_mutable_bit_parser$) {\n"
+                 "  $name_make_immutable$; // C\n"
+                 "}\n");
 }
 
 void RepeatedImmutablePrimitiveFieldGenerator::GenerateSerializationCode(

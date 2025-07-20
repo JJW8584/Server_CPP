@@ -10,6 +10,8 @@
 #include "ClientPacketHandler.h"
 #include <tchar.h>
 #include "Protocol.pb.h"
+#include "Enum.pb.h"
+#include "Struct.pb.h"
 
 int main()
 {
@@ -33,37 +35,9 @@ int main()
 				}
 			});
 	}
-
-	char sendData1[] = "가";		// CP949 (한글 2바이트, 로마 1바이트)
-	char sendData2[] = u8"가";		// UTF-8 (한글 3바이트, 로마 1바이트)
-	WCHAR sendData3[] = L"가";		// UTF-16 (한글 2바이트, 로마 2바이트)
-	TCHAR sendData4[] = _T("가");	// 알아서 골라줘
 	
 	while (true)
 	{
-		Protocol::S_TEST pkt;
-		pkt.set_id(1000);
-		pkt.set_hp(200);
-		pkt.set_attack(20);
-		{
-			Protocol::BuffData* buf = pkt.add_buffs();
-			buf->set_buffid(100);
-			buf->set_remaintime(3.5f);
-			buf->add_victims(5);
-		}
-		{
-			Protocol::BuffData* buf = pkt.add_buffs();
-			buf->set_buffid(200);
-			buf->set_remaintime(2.3f);
-			buf->add_victims(4);
-			buf->add_victims(1);
-		}
-
-		SendBufferRef sendBuffer = ClientPacketHandler::MakeSendBuffer(pkt);
-
-		
-		GSessionManager.Broadcast(sendBuffer);
-
 		std::this_thread::sleep_for(250ms);
 	}
 

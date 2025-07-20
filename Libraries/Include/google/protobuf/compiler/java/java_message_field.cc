@@ -32,18 +32,17 @@
 //  Based on original Protocol Buffers design by
 //  Sanjay Ghemawat, Jeff Dean, and others.
 
-#include <google/protobuf/compiler/java/java_message_field.h>
-
 #include <map>
 #include <string>
 
-#include <google/protobuf/io/printer.h>
-#include <google/protobuf/wire_format.h>
-#include <google/protobuf/stubs/strutil.h>
 #include <google/protobuf/compiler/java/java_context.h>
 #include <google/protobuf/compiler/java/java_doc_comment.h>
 #include <google/protobuf/compiler/java/java_helpers.h>
+#include <google/protobuf/compiler/java/java_message_field.h>
 #include <google/protobuf/compiler/java/java_name_resolver.h>
+#include <google/protobuf/io/printer.h>
+#include <google/protobuf/wire_format.h>
+#include <google/protobuf/stubs/strutil.h>
 
 namespace google {
 namespace protobuf {
@@ -109,6 +108,13 @@ void SetMessageVariables(const FieldDescriptor* descriptor, int messageBitIndex,
   (*variables)["get_mutable_bit_builder"] = GenerateGetBit(builderBitIndex);
   (*variables)["set_mutable_bit_builder"] = GenerateSetBit(builderBitIndex);
   (*variables)["clear_mutable_bit_builder"] = GenerateClearBit(builderBitIndex);
+
+  // For repeated fields, one bit is used for whether the array is immutable
+  // in the parsing constructor.
+  (*variables)["get_mutable_bit_parser"] =
+      GenerateGetBitMutableLocal(builderBitIndex);
+  (*variables)["set_mutable_bit_parser"] =
+      GenerateSetBitMutableLocal(builderBitIndex);
 
   (*variables)["get_has_field_bit_from_local"] =
       GenerateGetBitFromLocal(builderBitIndex);
@@ -411,7 +417,7 @@ void ImmutableMessageFieldGenerator::GenerateKotlinDslMembers(
     io::Printer* printer) const {
   WriteFieldDocComment(printer, descriptor_);
   printer->Print(variables_,
-                 "$kt_deprecation$public var $kt_name$: $kt_type$\n"
+                 "$kt_deprecation$var $kt_name$: $kt_type$\n"
                  "  @JvmName(\"${$get$kt_capitalized_name$$}$\")\n"
                  "  get() = $kt_dsl_builder$.${$get$capitalized_name$$}$()\n"
                  "  @JvmName(\"${$set$kt_capitalized_name$$}$\")\n"
@@ -422,26 +428,15 @@ void ImmutableMessageFieldGenerator::GenerateKotlinDslMembers(
   WriteFieldAccessorDocComment(printer, descriptor_, CLEARER,
                                /* builder */ false);
   printer->Print(variables_,
-                 "public fun ${$clear$kt_capitalized_name$$}$() {\n"
+                 "fun ${$clear$kt_capitalized_name$$}$() {\n"
                  "  $kt_dsl_builder$.${$clear$capitalized_name$$}$()\n"
                  "}\n");
 
   WriteFieldAccessorDocComment(printer, descriptor_, HAZZER);
-  printer->Print(
-      variables_,
-      "public fun ${$has$kt_capitalized_name$$}$(): kotlin.Boolean {\n"
-      "  return $kt_dsl_builder$.${$has$capitalized_name$$}$()\n"
-      "}\n");
-
-  GenerateKotlinOrNull(printer);
-}
-
-void ImmutableMessageFieldGenerator::GenerateKotlinOrNull(io::Printer* printer) const {
-  if (descriptor_->has_optional_keyword()) {
-    printer->Print(variables_,
-                   "public val $classname$Kt.Dsl.$name$OrNull: $kt_type$?\n"
-                   "  get() = $kt_dsl_builder$.$name$OrNull\n");
-  }
+  printer->Print(variables_,
+                 "fun ${$has$kt_capitalized_name$$}$(): kotlin.Boolean {\n"
+                 "  return $kt_dsl_builder$.${$has$capitalized_name$$}$()\n"
+                 "}\n");
 }
 
 void ImmutableMessageFieldGenerator::GenerateFieldBuilderInitializationCode(
@@ -494,21 +489,35 @@ void ImmutableMessageFieldGenerator::GenerateBuildingCode(
   }
 }
 
-void ImmutableMessageFieldGenerator::GenerateBuilderParsingCode(
+void ImmutableMessageFieldGenerator::GenerateParsingCode(
     io::Printer* printer) const {
+  printer->Print(variables_,
+                 "$type$.Builder subBuilder = null;\n"
+                 "if ($is_field_present_message$) {\n"
+                 "  subBuilder = $name$_.toBuilder();\n"
+                 "}\n");
+
   if (GetType(descriptor_) == FieldDescriptor::TYPE_GROUP) {
     printer->Print(variables_,
-                   "input.readGroup($number$,\n"
-                   "    get$capitalized_name$FieldBuilder().getBuilder(),\n"
-                   "    extensionRegistry);\n"
-                   "$set_has_field_bit_builder$\n");
+                   "$name$_ = input.readGroup($number$, $type$.$get_parser$,\n"
+                   "    extensionRegistry);\n");
   } else {
     printer->Print(variables_,
-                   "input.readMessage(\n"
-                   "    get$capitalized_name$FieldBuilder().getBuilder(),\n"
-                   "    extensionRegistry);\n"
-                   "$set_has_field_bit_builder$\n");
+                   "$name$_ = input.readMessage($type$.$get_parser$, "
+                   "extensionRegistry);\n");
   }
+
+  printer->Print(variables_,
+                 "if (subBuilder != null) {\n"
+                 "  subBuilder.mergeFrom($name$_);\n"
+                 "  $name$_ = subBuilder.buildPartial();\n"
+                 "}\n"
+                 "$set_has_field_bit_message$\n");
+}
+
+void ImmutableMessageFieldGenerator::GenerateParsingDoneCode(
+    io::Printer* printer) const {
+  // noop for messages.
 }
 
 void ImmutableMessageFieldGenerator::GenerateSerializationCode(
@@ -688,9 +697,8 @@ void ImmutableMessageOneofFieldGenerator::GenerateBuilderMembers(
 
       "if ($has_oneof_case_message$) {\n"
       "  $name$Builder_.mergeFrom(value);\n"
-      "} else {\n"
-      "  $name$Builder_.setMessage(value);\n"
-      "}\n",
+      "}\n"
+      "$name$Builder_.setMessage(value);\n",
 
       "$set_oneof_case_message$;\n"
       "return this;\n");
@@ -761,15 +769,6 @@ void ImmutableMessageOneofFieldGenerator::GenerateBuilderMembers(
   printer->Annotate("{", "}", descriptor_);
 }
 
-void ImmutableMessageOneofFieldGenerator::GenerateBuilderClearCode(
-    io::Printer* printer) const {
-  // Make sure the builder gets cleared.
-  printer->Print(variables_,
-                 "if ($name$Builder_ != null) {\n"
-                 "  $name$Builder_.clear();\n"
-                 "}\n");
-}
-
 void ImmutableMessageOneofFieldGenerator::GenerateBuildingCode(
     io::Printer* printer) const {
   printer->Print(variables_, "if ($has_oneof_case_message$) {\n");
@@ -790,21 +789,32 @@ void ImmutableMessageOneofFieldGenerator::GenerateMergingCode(
                  "merge$capitalized_name$(other.get$capitalized_name$());\n");
 }
 
-void ImmutableMessageOneofFieldGenerator::GenerateBuilderParsingCode(
+void ImmutableMessageOneofFieldGenerator::GenerateParsingCode(
     io::Printer* printer) const {
+  printer->Print(variables_,
+                 "$type$.Builder subBuilder = null;\n"
+                 "if ($has_oneof_case_message$) {\n"
+                 "  subBuilder = (($type$) $oneof_name$_).toBuilder();\n"
+                 "}\n");
+
   if (GetType(descriptor_) == FieldDescriptor::TYPE_GROUP) {
-    printer->Print(variables_,
-                   "input.readGroup($number$,\n"
-                   "    get$capitalized_name$FieldBuilder().getBuilder(),\n"
-                   "    extensionRegistry);\n"
-                   "$set_oneof_case_message$;\n");
+    printer->Print(
+        variables_,
+        "$oneof_name$_ = input.readGroup($number$, $type$.$get_parser$,\n"
+        "    extensionRegistry);\n");
   } else {
-    printer->Print(variables_,
-                   "input.readMessage(\n"
-                   "    get$capitalized_name$FieldBuilder().getBuilder(),\n"
-                   "    extensionRegistry);\n"
-                   "$set_oneof_case_message$;\n");
+    printer->Print(
+        variables_,
+        "$oneof_name$_ =\n"
+        "    input.readMessage($type$.$get_parser$, extensionRegistry);\n");
   }
+
+  printer->Print(variables_,
+                 "if (subBuilder != null) {\n"
+                 "  subBuilder.mergeFrom(($type$) $oneof_name$_);\n"
+                 "  $oneof_name$_ = subBuilder.buildPartial();\n"
+                 "}\n");
+  printer->Print(variables_, "$set_oneof_case_message$;\n");
 }
 
 void ImmutableMessageOneofFieldGenerator::GenerateSerializationCode(
@@ -1255,12 +1265,10 @@ void RepeatedImmutableMessageFieldGenerator::GenerateInitializationCode(
 void RepeatedImmutableMessageFieldGenerator::GenerateBuilderClearCode(
     io::Printer* printer) const {
   PrintNestedBuilderCondition(printer,
-                              "$name$_ = java.util.Collections.emptyList();\n",
+                              "$name$_ = java.util.Collections.emptyList();\n"
+                              "$clear_mutable_bit_builder$;\n",
 
-                              "$name$_ = null;\n"
                               "$name$Builder_.clear();\n");
-
-  printer->Print(variables_, "$clear_mutable_bit_builder$;\n");
 }
 
 void RepeatedImmutableMessageFieldGenerator::GenerateMergingCode(
@@ -1315,25 +1323,34 @@ void RepeatedImmutableMessageFieldGenerator::GenerateBuildingCode(
       "result.$name$_ = $name$Builder_.build();\n");
 }
 
-void RepeatedImmutableMessageFieldGenerator::GenerateBuilderParsingCode(
+void RepeatedImmutableMessageFieldGenerator::GenerateParsingCode(
     io::Printer* printer) const {
+  printer->Print(variables_,
+                 "if (!$get_mutable_bit_parser$) {\n"
+                 "  $name$_ = new java.util.ArrayList<$type$>();\n"
+                 "  $set_mutable_bit_parser$;\n"
+                 "}\n");
+
   if (GetType(descriptor_) == FieldDescriptor::TYPE_GROUP) {
-    printer->Print(variables_,
-                   "$type$ m =\n"
-                   "    input.readGroup($number$,\n"
-                   "        $type$.$get_parser$,\n"
-                   "        extensionRegistry);\n");
+    printer->Print(
+        variables_,
+        "$name$_.add(input.readGroup($number$, $type$.$get_parser$,\n"
+        "    extensionRegistry));\n");
   } else {
-    printer->Print(variables_,
-                   "$type$ m =\n"
-                   "    input.readMessage(\n"
-                   "        $type$.$get_parser$,\n"
-                   "        extensionRegistry);\n");
+    printer->Print(
+        variables_,
+        "$name$_.add(\n"
+        "    input.readMessage($type$.$get_parser$, extensionRegistry));\n");
   }
-  PrintNestedBuilderCondition(printer,
-                              "ensure$capitalized_name$IsMutable();\n"
-                              "$name$_.add(m);\n",
-                              "$name$Builder_.addMessage(m);\n");
+}
+
+void RepeatedImmutableMessageFieldGenerator::GenerateParsingDoneCode(
+    io::Printer* printer) const {
+  printer->Print(
+      variables_,
+      "if ($get_mutable_bit_parser$) {\n"
+      "  $name$_ = java.util.Collections.unmodifiableList($name$_);\n"
+      "}\n");
 }
 
 void RepeatedImmutableMessageFieldGenerator::GenerateSerializationCode(
@@ -1386,12 +1403,12 @@ void RepeatedImmutableMessageFieldGenerator::GenerateKotlinDslMembers(
       " */\n"
       "@kotlin.OptIn"
       "(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)\n"
-      "public class ${$$kt_capitalized_name$Proxy$}$ private constructor()"
+      "class ${$$kt_capitalized_name$Proxy$}$ private constructor()"
       " : com.google.protobuf.kotlin.DslProxy()\n");
 
   WriteFieldDocComment(printer, descriptor_);
   printer->Print(variables_,
-                 "$kt_deprecation$ public val $kt_name$: "
+                 "$kt_deprecation$ val $kt_name$: "
                  "com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>\n"
                  "  @kotlin.jvm.JvmSynthetic\n"
@@ -1404,34 +1421,33 @@ void RepeatedImmutableMessageFieldGenerator::GenerateKotlinDslMembers(
   printer->Print(variables_,
                  "@kotlin.jvm.JvmSynthetic\n"
                  "@kotlin.jvm.JvmName(\"add$kt_capitalized_name$\")\n"
-                 "public fun com.google.protobuf.kotlin.DslList"
+                 "fun com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
                  "add(value: $kt_type$) {\n"
                  "  $kt_dsl_builder$.${$add$capitalized_name$$}$(value)\n"
-                 "}\n");
+                 "}");
 
   WriteFieldAccessorDocComment(printer, descriptor_, LIST_ADDER,
                                /* builder */ false);
   printer->Print(variables_,
                  "@kotlin.jvm.JvmSynthetic\n"
                  "@kotlin.jvm.JvmName(\"plusAssign$kt_capitalized_name$\")\n"
-                 "@Suppress(\"NOTHING_TO_INLINE\")\n"
-                 "public inline operator fun com.google.protobuf.kotlin.DslList"
+                 "inline operator fun com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
                  "plusAssign(value: $kt_type$) {\n"
                  "  add(value)\n"
-                 "}\n");
+                 "}");
 
   WriteFieldAccessorDocComment(printer, descriptor_, LIST_MULTI_ADDER,
                                /* builder */ false);
   printer->Print(variables_,
                  "@kotlin.jvm.JvmSynthetic\n"
                  "@kotlin.jvm.JvmName(\"addAll$kt_capitalized_name$\")\n"
-                 "public fun com.google.protobuf.kotlin.DslList"
+                 "fun com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
                  "addAll(values: kotlin.collections.Iterable<$kt_type$>) {\n"
                  "  $kt_dsl_builder$.${$addAll$capitalized_name$$}$(values)\n"
-                 "}\n");
+                 "}");
 
   WriteFieldAccessorDocComment(printer, descriptor_, LIST_MULTI_ADDER,
                                /* builder */ false);
@@ -1439,12 +1455,11 @@ void RepeatedImmutableMessageFieldGenerator::GenerateKotlinDslMembers(
       variables_,
       "@kotlin.jvm.JvmSynthetic\n"
       "@kotlin.jvm.JvmName(\"plusAssignAll$kt_capitalized_name$\")\n"
-      "@Suppress(\"NOTHING_TO_INLINE\")\n"
-      "public inline operator fun com.google.protobuf.kotlin.DslList"
+      "inline operator fun com.google.protobuf.kotlin.DslList"
       "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
       "plusAssign(values: kotlin.collections.Iterable<$kt_type$>) {\n"
       "  addAll(values)\n"
-      "}\n");
+      "}");
 
   WriteFieldAccessorDocComment(printer, descriptor_, LIST_INDEXED_SETTER,
                                /* builder */ false);
@@ -1452,22 +1467,22 @@ void RepeatedImmutableMessageFieldGenerator::GenerateKotlinDslMembers(
       variables_,
       "@kotlin.jvm.JvmSynthetic\n"
       "@kotlin.jvm.JvmName(\"set$kt_capitalized_name$\")\n"
-      "public operator fun com.google.protobuf.kotlin.DslList"
+      "operator fun com.google.protobuf.kotlin.DslList"
       "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
       "set(index: kotlin.Int, value: $kt_type$) {\n"
       "  $kt_dsl_builder$.${$set$capitalized_name$$}$(index, value)\n"
-      "}\n");
+      "}");
 
   WriteFieldAccessorDocComment(printer, descriptor_, CLEARER,
                                /* builder */ false);
   printer->Print(variables_,
                  "@kotlin.jvm.JvmSynthetic\n"
                  "@kotlin.jvm.JvmName(\"clear$kt_capitalized_name$\")\n"
-                 "public fun com.google.protobuf.kotlin.DslList"
+                 "fun com.google.protobuf.kotlin.DslList"
                  "<$kt_type$, ${$$kt_capitalized_name$Proxy$}$>."
                  "clear() {\n"
                  "  $kt_dsl_builder$.${$clear$capitalized_name$$}$()\n"
-                 "}\n\n");
+                 "}");
 }
 
 }  // namespace java

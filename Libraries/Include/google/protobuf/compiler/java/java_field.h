@@ -77,8 +77,9 @@ class ImmutableFieldGenerator {
   virtual void GenerateBuilderClearCode(io::Printer* printer) const = 0;
   virtual void GenerateMergingCode(io::Printer* printer) const = 0;
   virtual void GenerateBuildingCode(io::Printer* printer) const = 0;
-  virtual void GenerateBuilderParsingCode(io::Printer* printer) const = 0;
-  virtual void GenerateBuilderParsingCodeFromPacked(io::Printer* printer) const;
+  virtual void GenerateParsingCode(io::Printer* printer) const = 0;
+  virtual void GenerateParsingCodeFromPacked(io::Printer* printer) const;
+  virtual void GenerateParsingDoneCode(io::Printer* printer) const = 0;
   virtual void GenerateSerializationCode(io::Printer* printer) const = 0;
   virtual void GenerateSerializedSizeCode(io::Printer* printer) const = 0;
   virtual void GenerateFieldBuilderInitializationCode(
@@ -155,7 +156,7 @@ template <>
 FieldGeneratorMap<ImmutableFieldLiteGenerator>::~FieldGeneratorMap();
 
 
-// Field information used in FieldGenerators.
+// Field information used in FieldGeneartors.
 struct FieldGeneratorInfo {
   std::string name;
   std::string capitalized_name;

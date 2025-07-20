@@ -1,11 +1,8 @@
-﻿  ServerPacketHandler.cpp
-  DummyClient.cpp
-  Enum.pb.cc
-  Protocol.pb.cc
-  Struct.pb.cc
+﻿  DummyClient.cpp
+  ServerPacketHandler.cpp
   코드를 생성하고 있습니다.
-  277 of 1702 functions (16.3%) were compiled, the rest were copied from previous compilation.
-    78 functions were new in current compilation
-    98 functions had inline decision re-evaluated but remain unchanged
+  153 of 1786 functions ( 8.6%) were compiled, the rest were copied from previous compilation.
+    80 functions were new in current compilation
+    69 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   DummyClient.vcxproj -> X:\Github\Server_std\Binary\Release\DummyClient.exe

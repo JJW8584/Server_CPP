@@ -27,4 +27,4 @@ X:\Github\Server_std\ServerCore\SocketUtils.cpp(86,31): warning C4244: '인수':
   
   컴파일하고 있습니다...
   ThreadManager.cpp
-  ServerCore.vcxproj -> X:\Github\Server_std\Libraries\Release\ServerCore.lib
+  ServerCore.vcxproj -> X:\Github\Server_std\Libraries\Libs\ServerCore\Release\ServerCore.lib

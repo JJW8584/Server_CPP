@@ -58,8 +58,5 @@
     <None Include="..\Common\Protobuf\bin\Enum.proto">
       <Filter>Protocol</Filter>
     </None>
-    <None Include="..\Common\Protobuf\bin\GenPackets.bat">
-      <Filter>Protocol</Filter>
-    </None>
   </ItemGroup>
 </Project>

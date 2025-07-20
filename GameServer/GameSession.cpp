@@ -15,7 +15,7 @@ void GameSession::OnDisconnected()
 
 void GameSession::OnRecvPacket(BYTE* buffer, int32 len)
 {
-	PacketSessionRef session = PacketSessionRef();
+	PacketSessionRef session = GetPacketSessionRef();
 	PacketHeader* header = reinterpret_cast<PacketHeader*>(buffer);
 
 	// TODO: 패킷 아이디 대역 체크
