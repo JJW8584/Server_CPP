@@ -3,6 +3,8 @@
 #include "BufferReader.h"
 #include "Protocol.pb.h"
 
+PacketHandlerFunc GPacketHandler[UINT16_MAX];
+
 // ÄÁÅÙÃ÷ ÀÛ¾÷
 bool Handle_INVALID(PacketSessionRef& session, BYTE* buffer, int32 len)
 {
@@ -14,6 +16,19 @@ bool Handle_INVALID(PacketSessionRef& session, BYTE* buffer, int32 len)
 
 bool Handle_S_TEST(PacketSessionRef& session, Protocol::S_TEST& pkt)
 {
+	cout << pkt.id() << ' ' << pkt.hp() << ' ' << pkt.attack() << endl;
+	cout << "Buff Size : " << pkt.buffs_size() << endl;
+	for (auto buf : pkt.buffs())
+	{
+		cout << buf.buffid() << ' ' << buf.remaintime() << ' ' << endl;
+		cout << "Vicims : " << buf.victims_size() << endl;
+		for (auto vic : buf.victims())
+		{
+			cout << vic << ' ';
+		}
+		cout << endl;
+	}
+
 	return true;
 }
 

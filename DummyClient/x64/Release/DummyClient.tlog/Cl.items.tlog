@@ -1,4 +1,6 @@
-X:\Github\Server_std\protoc-3.20.2-win64\bin\Protocol.pb.cc;X:\Github\Server_std\DummyClient\x64\Release\Protocol.pb.obj
-X:\Github\Server_std\DummyClient\ClientPacketHandler.cpp;X:\Github\Server_std\DummyClient\x64\Release\ClientPacketHandler.obj
+X:\Github\Server_std\DummyClient\ServerPacketHandler.cpp;X:\Github\Server_std\DummyClient\x64\Release\ServerPacketHandler.obj
 X:\Github\Server_std\DummyClient\DummyClient.cpp;X:\Github\Server_std\DummyClient\x64\Release\DummyClient.obj
+X:\Github\Server_std\DummyClient\Enum.pb.cc;X:\Github\Server_std\DummyClient\x64\Release\Enum.pb.obj
 X:\Github\Server_std\DummyClient\pch.cpp;X:\Github\Server_std\DummyClient\x64\Release\pch.obj
+X:\Github\Server_std\DummyClient\Protocol.pb.cc;X:\Github\Server_std\DummyClient\x64\Release\Protocol.pb.obj
+X:\Github\Server_std\DummyClient\Struct.pb.cc;X:\Github\Server_std\DummyClient\x64\Release\Struct.pb.obj

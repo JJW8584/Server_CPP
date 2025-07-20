@@ -1,5 +1,9 @@
-﻿Struct.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
-Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
+﻿  'protoc.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+  배치 파일이 아닙니다.
+  'protoc.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+  배치 파일이 아닙니다.
+  'protoc.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+  배치 파일이 아닙니다.
   Traceback (most recent call last):
     File "PacketGenerator.py", line 32, in <module>
     File "PacketGenerator.py", line 20, in main
@@ -8,7 +12,7 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
     File "jinja2\loaders.py", line 126, in load
     File "jinja2\loaders.py", line 209, in get_source
   jinja2.exceptions.TemplateNotFound: 'PacketHandler.h' not found in search path: 'Templates'
-  [PYI-6680:ERROR] Failed to execute script 'PacketGenerator' due to unhandled exception!
+  [PYI-18388:ERROR] Failed to execute script 'PacketGenerator' due to unhandled exception!
   Traceback (most recent call last):
     File "PacketGenerator.py", line 32, in <module>
     File "PacketGenerator.py", line 20, in main
@@ -17,50 +21,39 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
     File "jinja2\loaders.py", line 126, in load
     File "jinja2\loaders.py", line 209, in get_source
   jinja2.exceptions.TemplateNotFound: 'PacketHandler.h' not found in search path: 'Templates'
-  [PYI-14592:ERROR] Failed to execute script 'PacketGenerator' due to unhandled exception!
+  [PYI-2628:ERROR] Failed to execute script 'PacketGenerator' due to unhandled exception!
   계속하려면 아무 키나 누르십시오 . . . 
-  X:Enum.pb.h
-  1개 파일이 복사되었습니다.
-  X:Enum.pb.cc
-  1개 파일이 복사되었습니다.
-  X:Struct.pb.h
-  1개 파일이 복사되었습니다.
-  X:Struct.pb.cc
-  1개 파일이 복사되었습니다.
-  X:Protocol.pb.h
-  1개 파일이 복사되었습니다.
-  X:Protocol.pb.cc
-  1개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Enum.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Enum.pb.cc
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Struct.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Struct.pb.cc
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Protocol.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Protocol.pb.cc
+  0개 파일이 복사되었습니다.
   0개 파일이 복사되었습니다.
   파일을 찾을 수 없습니다-ClientPacketHandler.h
-  X:Enum.pb.h
-  1개 파일이 복사되었습니다.
-  X:Enum.pb.cc
-  1개 파일이 복사되었습니다.
-  X:Struct.pb.h
-  1개 파일이 복사되었습니다.
-  X:Struct.pb.cc
-  1개 파일이 복사되었습니다.
-  X:Protocol.pb.h
-  1개 파일이 복사되었습니다.
-  X:Protocol.pb.cc
-  1개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Enum.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Enum.pb.cc
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Struct.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Struct.pb.cc
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Protocol.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Protocol.pb.cc
+  0개 파일이 복사되었습니다.
   0개 파일이 복사되었습니다.
   파일을 찾을 수 없습니다-ServerPacketHandler.h
-  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Enum.pb.h
-  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Protocol.pb.h
-  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Struct.pb.h
-  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Enum.pb.cc
-  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Protocol.pb.cc
-  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Struct.pb.cc
-  X:\GitHub\Server_std\Common\Protobuf\bin\*.h을(를) 찾을 수 없습니다.
+  X:\Github\Server_std\Common\Protobuf\bin\*.pb.h을(를) 찾을 수 없습니다.
+  X:\Github\Server_std\Common\Protobuf\bin\*.pb.cc을(를) 찾을 수 없습니다.
+  X:\Github\Server_std\Common\Protobuf\bin\*.h을(를) 찾을 수 없습니다.
   계속하려면 아무 키나 누르십시오 . . . 
-  DummyClient.cpp
   ServerPacketHandler.cpp
-  코드를 생성하고 있습니다...
-  Enum.pb.cc
-  Protocol.pb.cc
-  Struct.pb.cc
-  코드를 생성하고 있습니다...
-DummyClient.obj : error LNK2001: 확인할 수 없는 외부 기호 "class std::function<bool __cdecl(class std::shared_ptr<class PacketSession> &,unsigned char *,int)> * GPacketHandler" (?GPacketHandler@@3PAV?$function@$$A6A_NAEAV?$shared_ptr@VPacketSession@@@std@@PEAEH@Z@std@@A)
-X:\GitHub\Server_std\Binary\Debug\DummyClient.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+  DummyClient.vcxproj -> X:\Github\Server_std\Binary\Debug\DummyClient.exe

@@ -44,6 +44,8 @@ public:
 
 int main()
 {
+	ServerPacketHandler::Init();
+
 	std::this_thread::sleep_for(1s);
 
 	ClientServiceRef service = MakeShared<ClientService>(
