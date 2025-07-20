@@ -7,13 +7,13 @@
 #include "GameSessionManager.h"
 #include "BufferWriter.h"
 #include <chrono>
-#include "ServerPacketHandler.h"
+#include "ClientPacketHandler.h"
 #include <tchar.h>
 #include "Protocol.pb.h"
 
 int main()
 {
-	ServerPacketHandler::Init();
+	ClientPacketHandler::Init();
 
 	ServerServiceRef service = MakeShared<ServerService>(
 		NetAddress(L"127.0.0.1", 7777),
@@ -59,7 +59,7 @@ int main()
 			buf->add_victims(1);
 		}
 
-		SendBufferRef sendBuffer = ServerPacketHandler::MakeSendBuffer(pkt);
+		SendBufferRef sendBuffer = ClientPacketHandler::MakeSendBuffer(pkt);
 
 		
 		GSessionManager.Broadcast(sendBuffer);

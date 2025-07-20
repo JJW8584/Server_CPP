@@ -1,5 +1,24 @@
 ﻿Struct.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
 Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
+  Traceback (most recent call last):
+    File "PacketGenerator.py", line 32, in <module>
+    File "PacketGenerator.py", line 20, in main
+    File "jinja2\environment.py", line 1016, in get_template
+    File "jinja2\environment.py", line 975, in _load_template
+    File "jinja2\loaders.py", line 126, in load
+    File "jinja2\loaders.py", line 209, in get_source
+  jinja2.exceptions.TemplateNotFound: 'PacketHandler.h' not found in search path: 'Templates'
+  [PYI-22692:ERROR] Failed to execute script 'PacketGenerator' due to unhandled exception!
+  Traceback (most recent call last):
+    File "PacketGenerator.py", line 32, in <module>
+    File "PacketGenerator.py", line 20, in main
+    File "jinja2\environment.py", line 1016, in get_template
+    File "jinja2\environment.py", line 975, in _load_template
+    File "jinja2\loaders.py", line 126, in load
+    File "jinja2\loaders.py", line 209, in get_source
+  jinja2.exceptions.TemplateNotFound: 'PacketHandler.h' not found in search path: 'Templates'
+  [PYI-10736:ERROR] Failed to execute script 'PacketGenerator' due to unhandled exception!
+  계속하려면 아무 키나 누르십시오 . . . 
   X:Enum.pb.h
   1개 파일이 복사되었습니다.
   X:Enum.pb.cc
@@ -8,28 +27,36 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
   1개 파일이 복사되었습니다.
   X:Struct.pb.cc
   1개 파일이 복사되었습니다.
-  X:Protocol.pb.h
-  1개 파일이 복사되었습니다.
-  X:Protocol.pb.cc
-  1개 파일이 복사되었습니다.
-  X:Enum.pb.h
-  1개 파일이 복사되었습니다.
-  X:Enum.pb.cc
-  1개 파일이 복사되었습니다.
-  X:Struct.pb.h
-  1개 파일이 복사되었습니다.
-  X:Struct.pb.cc
-  1개 파일이 복사되었습니다.
-  X:Protocol.pb.h
-  1개 파일이 복사되었습니다.
-  X:Protocol.pb.cc
-  1개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Protocol.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Protocol.pb.cc
+  0개 파일이 복사되었습니다.
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-ClientPacketHandler.h
+  파일을 찾을 수 없습니다-Enum.pb.h
+  0개 파일이 복사되었습니다.
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Enum.pb.cc
+  파일을 찾을 수 없습니다-Struct.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Struct.pb.cc
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Protocol.pb.h
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-Protocol.pb.cc
+  0개 파일이 복사되었습니다.
+  0개 파일이 복사되었습니다.
+  파일을 찾을 수 없습니다-ServerPacketHandler.h
+  X:\GitHub\Server_std\Common\Protobuf\bin\*.pb.h을(를) 찾을 수 없습니다.
+  X:\GitHub\Server_std\Common\Protobuf\bin\*.pb.cc을(를) 찾을 수 없습니다.
+  X:\GitHub\Server_std\Common\Protobuf\bin\*.h을(를) 찾을 수 없습니다.
+  계속하려면 아무 키나 누르십시오 . . . 
   Enum.pb.cc
   Protocol.pb.cc
   Struct.pb.cc
   코드를 생성하고 있습니다...
   GameServer.cpp
   GameSession.cpp
-  ServerPacketHandler.cpp
+  ClientPacketHandler.cpp
   코드를 생성하고 있습니다...
   GameServer.vcxproj -> X:\GitHub\Server_std\Binary\Debug\GameServer.exe
