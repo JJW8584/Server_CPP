@@ -12,9 +12,27 @@
 #include "Protocol.pb.h"
 #include "Enum.pb.h"
 #include "Struct.pb.h"
+#include "Job.h"
+#include "Room.h"
 
 int main()
 {
+	// Test Job
+	{
+		// [요청 내용] : 1번 플레이어에게 10만큼 힐
+		// 행동 : heal
+		// 인자 : 1번 유저, 힐량 10
+
+		HealJob healJob;
+		healJob._target = 1;
+		healJob._healValue = 10;
+
+		healJob.Excute();
+	}
+
+
+	// Job
+
 	ClientPacketHandler::Init();
 
 	ServerServiceRef service = MakeShared<ServerService>(
@@ -38,6 +56,7 @@ int main()
 	
 	while (true)
 	{
+		GRoom.FlushJob();
 		std::this_thread::sleep_for(250ms);
 	}
 
