@@ -15,22 +15,32 @@
 #include "Job.h"
 #include "Room.h"
 
+void HealByValue(int64 target, int32 value)
+{
+	cout << target << "한테 힐 " << value << endl;
+}
+
+class Knight
+{
+public:
+	void HealMe(int32 value)
+	{
+		cout << "Heal Me!" << endl;
+	}
+};
+
 int main()
 {
 	// Test Job
 	{
-		// [요청 내용] : 1번 플레이어에게 10만큼 힐
-		// 행동 : heal
-		// 인자 : 1번 유저, 힐량 10
-
-		HealJob healJob;
-		healJob._target = 1;
-		healJob._healValue = 10;
-
-		healJob.Excute();
+		FuncJob<void, int64, int32> job(HealByValue, 100, 10);
+		job.Excute();
 	}
-
-
+	{
+		Knight k1;
+		MemberJob job2(&k1, &Knight::HealMe, 10);
+		job2.Excute();
+	}
 	// Job
 
 	ClientPacketHandler::Init();
