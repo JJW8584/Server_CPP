@@ -14,35 +14,32 @@
 #include "Struct.pb.h"
 #include "Job.h"
 #include "Room.h"
+#include "Player.h"
+#include <functional>
 
-void HealByValue(int64 target, int32 value)
-{
-	cout << target << "한테 힐 " << value << endl;
-}
-
-class Knight
+class Knight : public enable_shared_from_this<Knight>
 {
 public:
 	void HealMe(int32 value)
 	{
-		cout << "Heal Me!" << endl;
+		_hp += value;
+		cout << "Heal Me" << endl;
 	}
+
+	void Test()
+	{
+		auto job = [self = shared_from_this()]()
+			{
+				self->HealMe(self->_hp);
+			};
+	}
+
+private:
+	int32 _hp = 100;
 };
 
 int main()
 {
-	// Test Job
-	{
-		FuncJob<void, int64, int32> job(HealByValue, 100, 10);
-		job.Excute();
-	}
-	{
-		Knight k1;
-		MemberJob job2(&k1, &Knight::HealMe, 10);
-		job2.Excute();
-	}
-	// Job
-
 	ClientPacketHandler::Init();
 
 	ServerServiceRef service = MakeShared<ServerService>(
@@ -66,7 +63,7 @@ int main()
 	
 	while (true)
 	{
-		GRoom.FlushJob();
+		GRoom->FlushJob();
 		std::this_thread::sleep_for(250ms);
 	}
 

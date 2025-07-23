@@ -188,6 +188,7 @@
   파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Protocol.pb.cc
   파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Struct.pb.cc
   계속하려면 아무 키나 누르십시오 . . . 
+  pch.cpp
   DummyClient.cpp
   ServerPacketHandler.cpp
   코드를 생성하고 있습니다...

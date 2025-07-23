@@ -7,6 +7,9 @@ X:\GitHub\Server_std\ServerCore\CoreTLS.cpp;X:\GitHub\Server_std\ServerCore\x64\
 X:\GitHub\Server_std\ServerCore\DeadLockProfiler.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\DeadLockProfiler.obj
 X:\GitHub\Server_std\ServerCore\IocpCore.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\IocpCore.obj
 X:\GitHub\Server_std\ServerCore\IocpEvent.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\IocpEvent.obj
+X:\GitHub\Server_std\ServerCore\Job.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\Job.obj
+X:\GitHub\Server_std\ServerCore\JobQueue.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\JobQueue.obj
+X:\GitHub\Server_std\ServerCore\JobSerializer.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\JobSerializer.obj
 X:\GitHub\Server_std\ServerCore\Listener.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\Listener.obj
 X:\GitHub\Server_std\ServerCore\Lock.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\Lock.obj
 X:\GitHub\Server_std\ServerCore\Memory.cpp;X:\GitHub\Server_std\ServerCore\x64\Debug\Memory.obj
