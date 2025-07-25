@@ -60,12 +60,6 @@ int main()
 				}
 			});
 	}
-	
-	while (true)
-	{
-		GRoom->FlushJob();
-		std::this_thread::sleep_for(250ms);
-	}
 
 	GThreadManager->Join();
 }
