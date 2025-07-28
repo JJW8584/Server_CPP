@@ -17,7 +17,7 @@ bool Handle_INVALID(PacketSessionRef& session, BYTE* buffer, int32 len)
 bool Handle_S_LOGIN(PacketSessionRef& session, Protocol::S_LOGIN& pkt)
 {
 	if (pkt.success() == false)
-		return false;
+		return true;
 
 	if (pkt.players().size() == 0)
 	{

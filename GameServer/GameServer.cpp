@@ -59,10 +59,7 @@ int main()
 	{
 		GThreadManager->Launch([&service]()
 			{
-				while (true)
-				{
-					DoWorkerJob(service);
-				}
+				DoWorkerJob(service);
 			});
 	}
 

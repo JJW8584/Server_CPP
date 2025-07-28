@@ -331,5 +331,5 @@ int32 PacketSession::OnRecv(BYTE* buffer, int32 len)
 		processLen += header.size;
 	}
 
-	return int32();
+	return processLen;
 }
