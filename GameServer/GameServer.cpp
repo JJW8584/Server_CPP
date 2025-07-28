@@ -17,26 +17,24 @@
 #include "Player.h"
 #include <functional>
 
-class Knight : public enable_shared_from_this<Knight>
+enum
 {
-public:
-	void HealMe(int32 value)
-	{
-		_hp += value;
-		cout << "Heal Me" << endl;
-	}
-
-	void Test()
-	{
-		auto job = [self = shared_from_this()]()
-			{
-				self->HealMe(self->_hp);
-			};
-	}
-
-private:
-	int32 _hp = 100;
+	WORKER_TICK = 64
 };
+
+void DoWorkerJob(ServerServiceRef& service)
+{
+	while (true)
+	{
+		LEndTickCount = ::GetTickCount64() + WORKER_TICK;
+
+		// 네트워크 입출력 처리 -> 인게임 로직
+		service->GetIocpCore()->Dispatch(10);
+
+		// 글로벌 큐
+		ThreadManager::DoGlobalQueueWork();
+	}
+}
 
 int main()
 {
@@ -52,14 +50,17 @@ int main()
 
 	for (int32 i = 0; i < 5; i++)
 	{
-		GThreadManager->Launch([=]()
+		GThreadManager->Launch([&service]()
 			{
 				while (true)
 				{
-					service->GetIocpCore()->Dispatch();
+					DoWorkerJob(service);
 				}
 			});
 	}
+
+	//Main Thread
+	DoWorkerJob(service);
 
 	GThreadManager->Join();
 }

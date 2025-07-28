@@ -181,23 +181,23 @@
   1개 파일이 복사되었습니다.
   X:ServerPacketHandler.h
   1개 파일이 복사되었습니다.
-  파일 삭제 - X:\Github\Server_std\Common\Protobuf\bin\Enum.pb.h
-  파일 삭제 - X:\Github\Server_std\Common\Protobuf\bin\Protocol.pb.h
-  파일 삭제 - X:\Github\Server_std\Common\Protobuf\bin\Struct.pb.h
-  파일 삭제 - X:\Github\Server_std\Common\Protobuf\bin\Enum.pb.cc
-  파일 삭제 - X:\Github\Server_std\Common\Protobuf\bin\Protocol.pb.cc
-  파일 삭제 - X:\Github\Server_std\Common\Protobuf\bin\Struct.pb.cc
+  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Enum.pb.h
+  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Protocol.pb.h
+  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Struct.pb.h
+  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Enum.pb.cc
+  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Protocol.pb.cc
+  파일 삭제 - X:\GitHub\Server_std\Common\Protobuf\bin\Struct.pb.cc
   계속하려면 아무 키나 누르십시오 . . . 
   pch.cpp
   Enum.pb.cc
   Protocol.pb.cc
   Struct.pb.cc
   코드를 생성하고 있습니다...
+  ClientPacketHandler.cpp
   GameServer.cpp
   GameSession.cpp
   GameSessionManager.cpp
   Player.cpp
-  ClientPacketHandler.cpp
   Room.cpp
   코드를 생성하고 있습니다...
-  GameServer.vcxproj -> X:\Github\Server_std\Binary\Debug\GameServer.exe
+  GameServer.vcxproj -> X:\GitHub\Server_std\Binary\Debug\GameServer.exe
