@@ -23,7 +23,7 @@ Memory::Memory()
 		}
 	}
 
-	for (size = 1024; size <= 2048; size += 64)
+	for (; size <= 2048; size += 128)
 	{
 		MemoryPool* pool = new MemoryPool(size);
 		_pools.push_back(pool);
@@ -35,7 +35,7 @@ Memory::Memory()
 		}
 	}
 
-	for (size = 2048; size <= 4096; size += 128)
+	for (; size <= 4096; size += 256)
 	{
 		MemoryPool* pool = new MemoryPool(size);
 		_pools.push_back(pool);
@@ -46,7 +46,6 @@ Memory::Memory()
 			tableIndex++;
 		}
 	}
-
 }
 
 Memory::~Memory()

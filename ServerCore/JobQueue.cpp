@@ -6,7 +6,7 @@
 //	JobQueue
 //------------
 
-void JobQueue::Push(JobRef&& job)
+void JobQueue::Push(JobRef job, bool pushOnly)
 {
 	const int32 prevCount = _jobCount.fetch_add(1);
 	_jobs.Push(job); // WRITE_LOCK
@@ -15,9 +15,9 @@ void JobQueue::Push(JobRef&& job)
 	if (prevCount == 0)
 	{
 		// 실행중인 jobQueue가 없을 때
-		if (LCurrentJobQueue == nullptr)
+		if (LCurrentJobQueue == nullptr && pushOnly == false)
 		{
-			Excute();
+			Execute();
 		}
 		else
 		{
@@ -27,7 +27,7 @@ void JobQueue::Push(JobRef&& job)
 	}
 }
 
-void JobQueue::Excute()
+void JobQueue::Execute()
 {
 	LCurrentJobQueue = this;
 

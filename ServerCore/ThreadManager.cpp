@@ -65,6 +65,13 @@ void ThreadManager::DoGlobalQueueWork()
 		if (jobQueue == nullptr)
 			break;
 
-		jobQueue->Excute();
+		jobQueue->Execute();
 	}
+}
+
+void ThreadManager::DistributeReserveJob()
+{
+	const uint64 now = ::GetTickCount64();
+	
+	GJobTimer->Distribute(now);
 }
