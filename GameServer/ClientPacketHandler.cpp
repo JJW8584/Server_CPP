@@ -33,7 +33,7 @@ bool Handle_C_LOGIN(PacketSessionRef& session, Protocol::C_LOGIN& pkt)
 	{
 		auto player = loginPkt.add_players();
 		player->set_name(u8"DB에서가져온이름1");
-		player->set_playertype(Protocol::PLAYET_TYPE_MAGE);
+		player->set_playertype(Protocol::PLAYER_TYPE_MAGE);
 
 		PlayerRef playerRef = MakeShared<Player>();
 		playerRef->playerId = idGenerator++;
@@ -47,7 +47,7 @@ bool Handle_C_LOGIN(PacketSessionRef& session, Protocol::C_LOGIN& pkt)
 	{
 		auto player = loginPkt.add_players();
 		player->set_name(u8"DB에서가져온이름2");
-		player->set_playertype(Protocol::PLAYET_TYPE_NIGHT);
+		player->set_playertype(Protocol::PLAYER_TYPE_KNIGHT);
 
 		PlayerRef playerRef = MakeShared<Player>();
 		playerRef->playerId = idGenerator++;
