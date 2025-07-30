@@ -1,4 +1,2 @@
-﻿  CoreGlobal.cpp
-  DBConnectionPool.cpp
-  코드를 생성하고 있습니다...
-  ServerCore.vcxproj -> X:\GitHub\Server_std\Libraries\Libs\ServerCore\Debug\ServerCore.lib
+﻿  DBBind.cpp
+  ServerCore.vcxproj -> X:\Github\Server_std\Libraries\Libs\ServerCore\Debug\ServerCore.lib
