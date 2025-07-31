@@ -8,6 +8,7 @@ X:\Github\Server_std\ServerCore\DBBind.cpp;X:\Github\Server_std\ServerCore\x64\D
 X:\Github\Server_std\ServerCore\DBConnection.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DBConnection.obj
 X:\Github\Server_std\ServerCore\DBConnectionPool.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DBConnectionPool.obj
 X:\Github\Server_std\ServerCore\DeadLockProfiler.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DeadLockProfiler.obj
+X:\Github\Server_std\ServerCore\FileUtils.cpp;X:\Github\Server_std\ServerCore\x64\Debug\FileUtils.obj
 X:\Github\Server_std\ServerCore\GlobalQueue.cpp;X:\Github\Server_std\ServerCore\x64\Debug\GlobalQueue.obj
 X:\Github\Server_std\ServerCore\IocpCore.cpp;X:\Github\Server_std\ServerCore\x64\Debug\IocpCore.obj
 X:\Github\Server_std\ServerCore\IocpEvent.cpp;X:\Github\Server_std\ServerCore\x64\Debug\IocpEvent.obj
@@ -28,3 +29,4 @@ X:\Github\Server_std\ServerCore\Service.cpp;X:\Github\Server_std\ServerCore\x64\
 X:\Github\Server_std\ServerCore\Session.cpp;X:\Github\Server_std\ServerCore\x64\Debug\Session.obj
 X:\Github\Server_std\ServerCore\SocketUtils.cpp;X:\Github\Server_std\ServerCore\x64\Debug\SocketUtils.obj
 X:\Github\Server_std\ServerCore\ThreadManager.cpp;X:\Github\Server_std\ServerCore\x64\Debug\ThreadManager.obj
+X:\Github\Server_std\ServerCore\XmlParser.cpp;X:\Github\Server_std\ServerCore\x64\Debug\XmlParser.obj

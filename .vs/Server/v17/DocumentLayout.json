@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "X:\\Github\\Server_std\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameDB.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameDB.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|X:\\Github\\Server_std\\GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F54E1E9-0646-4B9E-9C03-2B4F5742D621}|GameServer\\GameServer.vcxproj|solutionrelative:GameServer\\GameServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\XmlParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\XmlParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\XmlParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\XmlParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\DBBind.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|solutionrelative:ServerCore\\DBBind.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|X:\\Github\\Server_std\\Tools\\PacketGenerator\\PacketGenerator.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|solutionrelative:Tools\\PacketGenerator\\PacketGenerator.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|X:\\Github\\Server_std\\Tools\\PacketGenerator\\ProtoParser.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FBD7029E-0A89-4DBD-95BF-F7B089BAB525}|Tools\\PacketGenerator\\PacketGenerator.pyproj|solutionrelative:Tools\\PacketGenerator\\ProtoParser.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E046BA99-A6EC-4F24-9FB9-FEB4F0E92A90}|ServerCore\\ServerCore.vcxproj|X:\\Github\\Server_std\\ServerCore\\DBBind.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -45,12 +65,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 142,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 150,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "DummyClient.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\DummyClient\\DummyClient.cpp",
               "RelativeDocumentMoniker": "DummyClient\\DummyClient.cpp",
@@ -87,20 +107,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "XmlParser.h",
+              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\XmlParser.h",
+              "RelativeDocumentMoniker": "ServerCore\\XmlParser.h",
+              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\XmlParser.h",
+              "RelativeToolTip": "ServerCore\\XmlParser.h",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwCUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-31T15:03:41.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameDB.xml",
+              "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\GameDB.xml",
+              "RelativeDocumentMoniker": "GameServer\\GameDB.xml",
+              "ToolTip": "X:\\Github\\Server_std\\GameServer\\GameDB.xml",
+              "RelativeToolTip": "GameServer\\GameDB.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-31T14:25:22.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProtoParser.py",
+              "DocumentMoniker": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\ProtoParser.py",
+              "RelativeDocumentMoniker": "Tools\\PacketGenerator\\ProtoParser.py",
+              "ToolTip": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\ProtoParser.py",
+              "RelativeToolTip": "Tools\\PacketGenerator\\ProtoParser.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-07-31T14:24:31.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PacketGenerator.py",
+              "DocumentMoniker": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\PacketGenerator.py",
+              "RelativeDocumentMoniker": "Tools\\PacketGenerator\\PacketGenerator.py",
+              "ToolTip": "X:\\Github\\Server_std\\Tools\\PacketGenerator\\PacketGenerator.py",
+              "RelativeToolTip": "Tools\\PacketGenerator\\PacketGenerator.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-07-31T14:24:31.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DBBind.h",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\DBBind.h",
               "RelativeDocumentMoniker": "ServerCore\\DBBind.h",
               "ToolTip": "X:\\Github\\Server_std\\ServerCore\\DBBind.h",
               "RelativeToolTip": "ServerCore\\DBBind.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-07-30T14:30:09.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "DBConnection.h",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\DBConnection.h",
               "RelativeDocumentMoniker": "ServerCore\\DBConnection.h",
@@ -108,12 +180,11 @@
               "RelativeToolTip": "ServerCore\\DBConnection.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-29T09:40:05.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T09:40:05.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "CoreGlobal.h",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\CoreGlobal.h",
               "RelativeDocumentMoniker": "ServerCore\\CoreGlobal.h",
@@ -125,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "DBConnectionPool.h",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\DBConnectionPool.h",
               "RelativeDocumentMoniker": "ServerCore\\DBConnectionPool.h",
@@ -133,24 +204,23 @@
               "RelativeToolTip": "ServerCore\\DBConnectionPool.h",
               "ViewState": "AgIAAAEAAAAAAAAAAAAQwA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-29T09:36:14.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T09:36:14.768Z"
             }
           ]
         },
         {
-          "DockedWidth": 225,
+          "DockedWidth": 217,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameServer.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\GameServer\\GameServer.cpp",
               "RelativeDocumentMoniker": "GameServer\\GameServer.cpp",
               "ToolTip": "X:\\Github\\Server_std\\GameServer\\GameServer.cpp",
               "RelativeToolTip": "GameServer\\GameServer.cpp",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAUwJcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-30T11:13:28.616Z",
               "IsPinned": true,
@@ -175,6 +245,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "XmlParser.cpp",
+              "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\XmlParser.cpp",
+              "RelativeDocumentMoniker": "ServerCore\\XmlParser.cpp",
+              "ToolTip": "X:\\Github\\Server_std\\ServerCore\\XmlParser.cpp",
+              "RelativeToolTip": "ServerCore\\XmlParser.cpp",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAnwKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-31T15:03:46.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DBBind.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\DBBind.cpp",
               "RelativeDocumentMoniker": "ServerCore\\DBBind.cpp",
@@ -182,12 +265,11 @@
               "RelativeToolTip": "ServerCore\\DBBind.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-30T14:30:22.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T14:30:22.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "DBConnectionPool.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\DBConnectionPool.cpp",
               "RelativeDocumentMoniker": "ServerCore\\DBConnectionPool.cpp",
@@ -195,12 +277,11 @@
               "RelativeToolTip": "ServerCore\\DBConnectionPool.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-29T09:38:12.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T09:38:12.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "DBConnection.cpp",
               "DocumentMoniker": "X:\\Github\\Server_std\\ServerCore\\DBConnection.cpp",
               "RelativeDocumentMoniker": "ServerCore\\DBConnection.cpp",
@@ -208,8 +289,7 @@
               "RelativeToolTip": "ServerCore\\DBConnection.cpp",
               "ViewState": "AgIAAMkAAAAAAAAAAAAlwNEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-30T13:40:03.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T13:40:03.713Z"
             }
           ]
         }
