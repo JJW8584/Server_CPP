@@ -1,12 +1,15 @@
 X:\Github\Server_std\ServerCore\Allocator.cpp;X:\Github\Server_std\ServerCore\x64\Debug\Allocator.obj
 X:\Github\Server_std\ServerCore\BufferReader.cpp;X:\Github\Server_std\ServerCore\x64\Debug\BufferReader.obj
 X:\Github\Server_std\ServerCore\BufferWriter.cpp;X:\Github\Server_std\ServerCore\x64\Debug\BufferWriter.obj
+X:\Github\Server_std\ServerCore\ConsoleLog.cpp;X:\Github\Server_std\ServerCore\x64\Debug\ConsoleLog.obj
 X:\Github\Server_std\ServerCore\CoreGlobal.cpp;X:\Github\Server_std\ServerCore\x64\Debug\CoreGlobal.obj
 X:\Github\Server_std\ServerCore\CorePch.cpp;X:\Github\Server_std\ServerCore\x64\Debug\CorePch.obj
 X:\Github\Server_std\ServerCore\CoreTLS.cpp;X:\Github\Server_std\ServerCore\x64\Debug\CoreTLS.obj
 X:\Github\Server_std\ServerCore\DBBind.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DBBind.obj
 X:\Github\Server_std\ServerCore\DBConnection.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DBConnection.obj
 X:\Github\Server_std\ServerCore\DBConnectionPool.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DBConnectionPool.obj
+X:\Github\Server_std\ServerCore\DBModel.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DBModel.obj
+X:\Github\Server_std\ServerCore\DBSynchronizer.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DBSynchronizer.obj
 X:\Github\Server_std\ServerCore\DeadLockProfiler.cpp;X:\Github\Server_std\ServerCore\x64\Debug\DeadLockProfiler.obj
 X:\Github\Server_std\ServerCore\FileUtils.cpp;X:\Github\Server_std\ServerCore\x64\Debug\FileUtils.obj
 X:\Github\Server_std\ServerCore\GlobalQueue.cpp;X:\Github\Server_std\ServerCore\x64\Debug\GlobalQueue.obj

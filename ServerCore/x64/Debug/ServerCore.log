@@ -1,42 +1,4 @@
-﻿  pch.cpp
-  Allocator.cpp
-  BufferReader.cpp
-  BufferWriter.cpp
-  CoreGlobal.cpp
-  CorePch.cpp
-  CoreTLS.cpp
-  DBBind.cpp
-  DBConnection.cpp
-  DBConnectionPool.cpp
-  DeadLockProfiler.cpp
-  FileUtils.cpp
-  GlobalQueue.cpp
-  IocpCore.cpp
-  IocpEvent.cpp
-  Job.cpp
-  JobTimer.cpp
-  LockQueue.cpp
-  JobQueue.cpp
-  Listener.cpp
-  Lock.cpp
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
-  Memory.cpp
-  MemoryPool.cpp
-  NetAddress.cpp
-  RecvBuffer.cpp
-  RefCounting.cpp
-  SendBuffer.cpp
-  Service.cpp
-X:\Github\Server_std\ServerCore\NetAddress.cpp(13,31): warning C4244: '인수': 'uint64'에서 'u_short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/NetAddress.cpp'을(를) 컴파일하는 중)
-  
-  Session.cpp
-  SocketUtils.cpp
-X:\Github\Server_std\ServerCore\SocketUtils.cpp(86,31): warning C4244: '인수': 'uint64'에서 'u_short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/SocketUtils.cpp'을(를) 컴파일하는 중)
-  
-  ThreadManager.cpp
+﻿  ConsoleLog.cpp
   XmlParser.cpp
   코드를 생성하고 있습니다...
   ServerCore.vcxproj -> X:\Github\Server_std\Libraries\Libs\ServerCore\Debug\ServerCore.lib
