@@ -13,7 +13,7 @@
     <Filter Include="GameContents">
       <UniqueIdentifier>{8aafc1ae-ded2-404c-99dc-7aa9a2eace8b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main\DB">
+    <Filter Include="DB">
       <UniqueIdentifier>{5ec5d87e-f865-46ff-a7fa-26944cda229f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -77,6 +77,9 @@
     <ClInclude Include="Room.h">
       <Filter>GameContents</Filter>
     </ClInclude>
+    <ClInclude Include="GenProcedures.h">
+      <Filter>DB</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Common\Protobuf\bin\Protocol.proto">
@@ -88,10 +91,13 @@
     <None Include="..\Common\Protobuf\bin\Enum.proto">
       <Filter>Protocol</Filter>
     </None>
+    <None Include="..\Common\Procedures\GenProcs.bat">
+      <Filter>DB</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="GameDB.xml">
-      <Filter>Main\DB</Filter>
+      <Filter>DB</Filter>
     </Xml>
   </ItemGroup>
 </Project>
