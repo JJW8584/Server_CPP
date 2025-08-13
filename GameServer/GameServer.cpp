@@ -66,17 +66,6 @@ int main()
 	}
 
 	//Main Thread
-	//DoWorkerJob(service);
-
-	while (true)
-	{
-		Protocol::S_CHAT pkt;
-		pkt.set_msg("Hello World");
-		auto sendBuffer = ClientPacketHandler::MakeSendBuffer(pkt);
-
-		GSessionManager.Broadcast(sendBuffer);
-		std::this_thread::sleep_for(1s);
-	}
 
 	GThreadManager->Join();
 }

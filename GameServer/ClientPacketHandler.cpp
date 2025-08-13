@@ -13,7 +13,7 @@ bool Handle_INVALID(PacketSessionRef& session, BYTE* buffer, int32 len)
 	PacketHeader* header = reinterpret_cast<PacketHeader*>(buffer);
 	// TODO: Log
 
-	return true;
+	return false;
 }
 
 bool Handle_C_LOGIN(PacketSessionRef& session, Protocol::C_LOGIN& pkt)

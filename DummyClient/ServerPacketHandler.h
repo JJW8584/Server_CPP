@@ -1,4 +1,9 @@
 #pragma once
+
+#if UE_BUILD_DEBUG + UE_BUILD_DEVELOPMENT + UE_BUILD_TEST + UE_BUILD_SHIPPING >= 1
+#include "S1.h"
+#endif
+
 #include "Protocol.pb.h"
 #include "Enum.pb.h"
 #include "Struct.pb.h"
@@ -62,7 +67,11 @@ private:
 		const uint16 dataSize = static_cast<uint16>(pkt.ByteSizeLong());
 		const uint16 packetSize = dataSize + sizeof(PacketHeader);
 
+#if UE_BUILD_DEBUG + UE_BUILD_DEVELOPMENT + UE_BUILD_TEST + UE_BUILD_SHIPPING >= 1
+		SendBufferRef sendBuffer = MakeShared<SendBuffer>(packetSize);
+#else
 		SendBufferRef sendBuffer = GSendBufferManager->Open(packetSize);
+#endif
 
 		PacketHeader* header = reinterpret_cast<PacketHeader*>(sendBuffer->Buffer());
 		header->size = packetSize;
