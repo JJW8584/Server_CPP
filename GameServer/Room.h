@@ -1,16 +1,26 @@
 #pragma once
 #include "JobQueue.h"
 
-class Room : public JobQueue
+class Room : public enable_shared_from_this<Room>
 {
 public:
-	// 싱글 스레드처럼 코딩
-	void Enter(PlayerRef player);
-	void Leave(PlayerRef player);
-	void Broadcast(SendBufferRef sendBuffer);
+	Room();
+	virtual ~Room();
+
+	bool HandleEnterPlayerLocked(PlayerRef player);
+	bool HandleLeavePlayerLocked(PlayerRef player);
 
 private:
-	map<uint64, PlayerRef> _players;
+	bool EnterPlayer(PlayerRef player);
+	bool LeavePlayer(uint64 objectId);
+
+	USE_LOCK;
+
+private:
+	void Broadcast(SendBufferRef sendBuffer, uint64 exceptId = 0);
+
+private:
+	unordered_map<uint64, PlayerRef> _players;
 };
 
-extern shared_ptr<Room> GRoom;
+extern RoomRef GRoom;
