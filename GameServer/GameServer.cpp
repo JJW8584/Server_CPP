@@ -17,7 +17,6 @@
 #include "Player.h"
 #include <functional>
 #include "DBConnectionPool.h"
-#include "DBConnectionPool.h"
 #include "DBBind.h"
 #include "XmlParser.h"
 #include "DBSynchronizer.h"
