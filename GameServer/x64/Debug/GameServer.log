@@ -1,5 +1,4 @@
-﻿Struct.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
-Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
+﻿Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
   X:Enum.pb.h
   1개 파일이 복사되었습니다.
   X:Enum.pb.cc
