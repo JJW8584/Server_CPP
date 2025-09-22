@@ -66,5 +66,10 @@ int main()
 
 	//Main Thread
 
+	while (true)
+	{
+
+	}
+
 	GThreadManager->Join();
 }

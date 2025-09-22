@@ -12,10 +12,8 @@ Room::~Room()
 {
 }
 
-bool Room::HandleEnterPlayerLocked(PlayerRef player)
+bool Room::HandleEnterPlayer(PlayerRef player)
 {
-	WRITE_LOCK;
-
 	bool success = EnterPlayer(player);
 
 	// 랜덤 위치
@@ -69,12 +67,10 @@ bool Room::HandleEnterPlayerLocked(PlayerRef player)
 }
 
 
-bool Room::HandleLeavePlayerLocked(PlayerRef player)
+bool Room::HandleLeavePlayer(PlayerRef player)
 {
 	if (player == nullptr)
 		return false;
-
-	WRITE_LOCK;
 
 	const uint64 objectId = player->playerInfo->object_id();
 	bool success = LeavePlayer(objectId);
@@ -103,10 +99,8 @@ bool Room::HandleLeavePlayerLocked(PlayerRef player)
 	return success;
 }
 
-void Room::HandleMoveLocked(Protocol::C_MOVE& pkt)
+void Room::HandleMove(Protocol::C_MOVE pkt)
 {
-	WRITE_LOCK;
-
 	const uint64 objectId = pkt.info().object_id();
 	if (_players.find(objectId) == _players.end())
 		return;
@@ -127,6 +121,11 @@ void Room::HandleMoveLocked(Protocol::C_MOVE& pkt)
 	}
 }
 
+RoomRef Room::GetRoomRef()
+{
+	return static_pointer_cast<Room>(shared_from_this());
+}
+
 bool Room::EnterPlayer(PlayerRef player)
 {
 	// 있다면 문제가 있다.
@@ -135,7 +134,7 @@ bool Room::EnterPlayer(PlayerRef player)
 
 	_players.insert(make_pair(player->playerInfo->object_id(), player));
 
-	player->room.store(shared_from_this());
+	player->room.store(GetRoomRef());
 
 	return true;
 }
