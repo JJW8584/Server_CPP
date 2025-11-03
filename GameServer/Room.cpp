@@ -121,6 +121,15 @@ void Room::HandleMove(Protocol::C_MOVE pkt)
 	}
 }
 
+void Room::UpdateTick()
+{
+	cout << "Update Room" << endl;
+
+	// TODO
+
+	DoTimer(100, &Room::UpdateTick);
+}
+
 RoomRef Room::GetRoomRef()
 {
 	return static_pointer_cast<Room>(shared_from_this());
